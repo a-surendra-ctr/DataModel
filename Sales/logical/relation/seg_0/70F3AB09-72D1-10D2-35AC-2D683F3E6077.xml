@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fact_po_asn_dim_date_ship_fk" directorySegmentName="seg_0" id="70F3AB09-72D1-10D2-35AC-2D683F3E6077">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 15:05:19 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<sourcePk>39117D48-FA79-6683-6E39-43F2EFC32FE4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3F5D1BDF-621F-7147-E7AC-B4050322DF43</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C557338B-C9B5-6ECE-8D8B-E32D741A711F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,525 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="D55FA694-0CC5-EE5B-0150-68D8006857CD" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="vw_fact_invoice">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<ordsAlias>v_fact_invoice</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT fct_inv.bill_to_customer_key AS [Bill to Customer Key],
+  fct_inv.sold_to_customer_key AS [Sold to Customer Key],
+  fct_inv.location_key AS [Location Key],
+  fct_inv.invoice_date_key AS [Invoice Date Key],
+  fct_inv.product_key AS [Product Key],
+  fct_inv.po_no AS [PO no],
+  fct_inv.invoice_no AS [Invoice no],
+  fct_inv.order_no AS [Order no],
+  fct_inv.invoice_adjustment_type AS [Adjustment Type],
+  fct_inv.sale_transfer AS [Sale Transfer],
+  fct_inv.pass_through_credit_flag AS [Pass Through Flag],
+  CAST(IsNull(fct_inv.rma_flag, 'N') AS CHAR(1)) AS [RMA Flag],
+  CAST(IsNull(fct_inv.invoice_desc, 'Unknown') AS VARCHAR(255)) AS
+  [Invoice Desc],
+  CAST(fct_inv.qty_shipped AS int) AS [Qty Shipped],
+  CAST(fct_inv.qty_shipped_actual AS int) AS [Qty Shipped Actual],
+  CAST(fct_inv.qty_ordered AS int) AS [Qty Ordered],
+  CAST(fct_inv.qty_invoiced AS int) AS [Qty Invoiced],
+  fct_inv.unit_price AS [Unit Price],
+  fct_inv.unit_cost AS [Unit Cost],
+  fct_inv.margin_per_item AS [Margin Per Item],
+  fct_inv.supplier_inventory_price AS [AOI Manufacturer Price],
+  CAST(fct_inv.revenue_amount AS decimal(15,2)) AS [Revenue Amount],
+  CAST(fct_inv.cogs_amount AS decimal(15,2)) AS [Cogs Amount],
+  CAST(IsNull(fct_inv.sales_tax_amount, 0) AS decimal(15,2)) AS
+  [Sales Tax Amount]
+FROM edw.fact_invoice fct_inv]]></userDefinedSQL>
+<parsed>true</parsed>
+<syntaxProvider>MSSQL</syntaxProvider>
+<originalTableID>B39BE153-69D4-7525-7150-B8C2EAEF2437</originalTableID>
+<includeSchemaNameInQuery>true</includeSchemaNameInQuery>
+<usedContainers>
+<container alias="fct_inv" containerID="B39BE153-69D4-7525-7150-B8C2EAEF2437"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Bill to Customer Key]" id="6D9E882F-06C2-7584-252F-2DD45CFB69C4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Bill To Customer Key]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Bill to Customer Key]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>25A9E98B-D1AB-2DA1-D48D-946D637F1850</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+<associations>
+<colAssociation fkAssociation="065F8FDE-77E7-0279-CCC1-15876E9586D6" referredColumn="57C4F61A-58F0-7E87-1918-43DDDEE01FA8"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Sold to Customer Key]" id="4C0027EB-1262-3479-E4F8-684A21E8B565">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Sold To Customer Key]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Sold to Customer Key]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>12F0257C-EE67-AFCB-2D7E-F0ACEDD879E0</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Location Key]" id="65B62128-1A4E-8DA9-E5F4-8F07465516DA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Location Key]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Location Key]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>90CC0C12-0BED-4732-CB55-96A5CC31C777</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+<associations>
+<colAssociation fkAssociation="CF040F59-5A15-F634-BB24-3011596B28E8" referredColumn="57C4F61A-58F0-7E87-1918-43DDDEE01FA8"/>
+<colAssociation fkAssociation="2B4883F9-9ED9-CC83-AD1D-0F1DAD64B1AD" referredColumn="B60D1135-4A12-3D5F-8CDB-A37A2D3B89FA"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Invoice Date Key]" id="873443D7-62A9-134B-53CF-BB4CBF24EA03">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Invoice Date Key (edw.dim_date.date_key)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Invoice Date Key]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>593856AB-E668-C741-6C11-675A2E80FE65</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+<associations>
+<colAssociation fkAssociation="86281EBF-1C15-EF42-FA90-E5A4051C0075" referredColumn="596C453B-F92B-DA1D-9B46-755FA25A753E"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Product Key]" id="98DBE892-7BC0-4F1A-DB03-5E4BEAA31A27">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Product Key]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Product Key]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>63C6FC80-D1EF-D640-8936-ED2315E15C23</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+<associations>
+<colAssociation fkAssociation="533DD052-0DB1-7A1B-8F6D-01891D7F6436" referredColumn="7AD0AE05-87E8-268F-3133-846990492EAC"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[PO no]" id="F5B44DBF-ADEE-9F6A-2635-A6262B0E8EAA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Purchase order number]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[PO no]</alias>
+<dataType>VARCHAR (75)</dataType>
+<reference>false</reference>
+<referencedColumn>9EDDDA53-E31E-1844-A244-F36822264C05</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Invoice no]" id="69AA7D43-F088-FE94-4A18-80F9D01AE1BC">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Invoice number]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Invoice no]</alias>
+<dataType>VARCHAR (10)</dataType>
+<reference>false</reference>
+<referencedColumn>B695D717-7C51-7168-CF9A-1D32FC0E3512</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Order no]" id="66F2CD7B-62D2-8A43-E90D-0D32952F5A13">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Order number]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Order no]</alias>
+<dataType>VARCHAR (8)</dataType>
+<reference>false</reference>
+<referencedColumn>4662730B-59C4-0B44-05CC-7C5AAE7EFE41</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Adjustment Type]" id="7605DDBE-3FD3-5CA8-E08A-3DFFABDDD281">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicates invoice method type (Credit/Debit/Invoice/Prepayment/Correction)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Adjustment Type]</alias>
+<dataType>CHAR (1)</dataType>
+<reference>false</reference>
+<referencedColumn>2D417930-980A-3D46-FA23-B1003EF37078</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Sale Transfer]" id="B731F24E-A5E7-5063-EAF2-303E17D4D8B8">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Whether this is a SALE or a TRANSFER]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Sale Transfer]</alias>
+<dataType>VARCHAR (8)</dataType>
+<reference>false</reference>
+<referencedColumn>A9F6CA93-FFAF-50CF-157B-64A5C4A8052C</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Pass Through Flag]" id="790EEB8F-E6AE-2C45-633F-D4B6798D9603">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Pass Through Flag]</alias>
+<dataType>CHAR (1)</dataType>
+<reference>false</reference>
+<referencedColumn>AB6D5699-7F37-910C-DCE3-EB5F22D6336C</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[RMA Flag]" id="E24B21BD-BE4B-9CCE-46FE-34A8FF774735">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:57:00 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[RMA Flag]</alias>
+<dataType>CHAR(1)</dataType>
+<expression>Cast(IsNull(fct_inv.rma_flag, &apos;N&apos;) As CHAR(1))</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Invoice Desc]" id="B13654FD-B1C7-BF13-BC71-142454CA229B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:57:00 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Invoice Desc]</alias>
+<dataType>VARCHAR(255)</dataType>
+<expression>Cast(IsNull(fct_inv.invoice_desc, &apos;Unknown&apos;) As VARCHAR(255))</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Qty Shipped]" id="F08B3E75-36D9-0B6A-D0C2-C9C601D32499">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:57:00 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Qty Shipped]</alias>
+<dataType>INT</dataType>
+<expression>Cast(fct_inv.qty_shipped As int)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Qty Shipped Actual]" id="2F5B6D15-3750-8C3C-5FCE-A58C663B2A26">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:57:00 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Qty Shipped Actual]</alias>
+<dataType>INT</dataType>
+<expression>Cast(fct_inv.qty_shipped_actual As int)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Qty Ordered]" id="9A8948E5-0F07-9B6C-5385-7B3A13E6CDC8">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:57:00 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Qty Ordered]</alias>
+<dataType>INT</dataType>
+<expression>Cast(fct_inv.qty_ordered As int)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Qty Invoiced]" id="F1903B51-CB8D-F84B-02B6-9C2D37910898">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:57:00 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Qty Invoiced]</alias>
+<dataType>INT</dataType>
+<expression>Cast(fct_inv.qty_invoiced As int)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Unit Price]" id="A8271EB0-59F1-F5C6-5B14-5CEBD06D5301">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unti price for the item]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Unit Price]</alias>
+<dataType>DECIMAL (11,2)</dataType>
+<reference>false</reference>
+<referencedColumn>30064E10-A8D2-E4E8-6B8F-21E55A0A4989</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Unit Cost]" id="33AD61E5-1E1C-14FE-D299-51F96D29BDD0">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unit cost for the item]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Unit Cost]</alias>
+<dataType>DECIMAL (11,2)</dataType>
+<reference>false</reference>
+<referencedColumn>6F37C22D-B844-CBDD-E859-644355724C2C</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Margin Per Item]" id="A589DD99-13D5-468A-B1F6-1D6B747EDFD9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[What is the margin per item ?]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Margin Per Item]</alias>
+<dataType>DECIMAL (15,4)</dataType>
+<reference>false</reference>
+<referencedColumn>B4FD992C-BD74-3FC8-C72C-246A54BE84A4</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[AOI Manufacturer Price]" id="51305F49-7143-EE08-A1E6-614D0939B102">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Supplier Inventory cost ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[AOI Manufacturer Price]</alias>
+<dataType>DECIMAL (8,2)</dataType>
+<reference>false</reference>
+<referencedColumn>E01EF1D0-63C8-3231-5EF6-85A517E14CD6</referencedColumn>
+<table>B39BE153-69D4-7525-7150-B8C2EAEF2437</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Revenue Amount]" id="6BDE9E78-AE86-5771-D95C-62EE90F369E2">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:57:00 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Revenue Amount]</alias>
+<dataType>DECIMAL(15,2)</dataType>
+<expression>Cast(fct_inv.revenue_amount As decimal(15,2))</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Cogs Amount]" id="74F294AA-5508-F7CE-C242-6237570A4E90">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:57:00 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Cogs Amount]</alias>
+<dataType>DECIMAL(15,2)</dataType>
+<expression>Cast(fct_inv.cogs_amount As decimal(15,2))</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Sales Tax Amount]" id="2BB625CF-E2DA-9DFE-5BBC-0FD8FD7B4387">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:57:00 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Sales Tax Amount]</alias>
+<dataType>DECIMAL(15,2)</dataType>
+<expression>Cast(IsNull(fct_inv.sales_tax_amount, 0) As decimal(15,2))</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B39BE153-69D4-7525-7150-B8C2EAEF2437">
+<container>true</container>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="25A9E98B-D1AB-2DA1-D48D-946D637F1850">
+<columnName>bill_to_customer_key</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="12F0257C-EE67-AFCB-2D7E-F0ACEDD879E0">
+<columnName>sold_to_customer_key</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="90CC0C12-0BED-4732-CB55-96A5CC31C777">
+<columnName>location_key</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="593856AB-E668-C741-6C11-675A2E80FE65">
+<columnName>invoice_date_key</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="63C6FC80-D1EF-D640-8936-ED2315E15C23">
+<columnName>product_key</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9EDDDA53-E31E-1844-A244-F36822264C05">
+<columnName>po_no</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B695D717-7C51-7168-CF9A-1D32FC0E3512">
+<columnName>invoice_no</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4662730B-59C4-0B44-05CC-7C5AAE7EFE41">
+<columnName>order_no</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2D417930-980A-3D46-FA23-B1003EF37078">
+<columnName>invoice_adjustment_type</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A9F6CA93-FFAF-50CF-157B-64A5C4A8052C">
+<columnName>sale_transfer</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AB6D5699-7F37-910C-DCE3-EB5F22D6336C">
+<columnName>pass_through_credit_flag</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4F154BDC-02CC-2C2B-1CB0-373B109EA9FA">
+<columnName>rma_flag</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8086C381-0994-3D88-4BA2-B6BC67768ABD">
+<columnName>invoice_desc</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B12FE6C7-4AED-63F0-D54D-904A4363FE33">
+<columnName>qty_shipped</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EC8ECB83-039A-4925-9B2C-8CD74938A241">
+<columnName>qty_shipped_actual</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AF6EEA25-0387-BC2F-52C7-7977FF617BA5">
+<columnName>qty_ordered</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="305CE956-DF86-2D98-3075-8FC65FF3173D">
+<columnName>qty_invoiced</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="30064E10-A8D2-E4E8-6B8F-21E55A0A4989">
+<columnName>unit_price</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6F37C22D-B844-CBDD-E859-644355724C2C">
+<columnName>unit_cost</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B4FD992C-BD74-3FC8-C72C-246A54BE84A4">
+<columnName>margin_per_item</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E01EF1D0-63C8-3231-5EF6-85A517E14CD6">
+<columnName>supplier_inventory_price</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5D539465-D4E6-A65D-8AD1-69945DEF932F">
+<columnName>revenue_amount</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0F91AD6B-1162-06A3-DBBE-497D800B8834">
+<columnName>cogs_amount</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0FCDA8C5-F59B-38CF-0275-AD60501D8C73">
+<columnName>sales_tax_amount</columnName>
+<schema>edw</schema>
+<tableName>fact_invoice</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="58A01F7B-1281-7505-8340-A5D005621565" name="vw_fact_invoice_vw_dim_location_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 16:46:56 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="65B62128-1A4E-8DA9-E5F4-8F07465516DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29231275-6B86-E06A-3239-D257C62A228B" name="vw_fact_invoice_vw_dim_product_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 16:47:25 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="98DBE892-7BC0-4F1A-DB03-5E4BEAA31A27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C081394-7AD3-6D23-04A0-FF0FF952D552" name="vw_fact_invoice_vw_dim_ship_to_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 16:47:50 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+</ind_PK_UK>
+<ind_PK_UK id="CF414BF0-BA4C-74B5-633E-3183E385C691" name="vw_fact_invoice_vw_dim_date_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 11:31:23 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="873443D7-62A9-134B-53CF-BB4CBF24EA03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41DB4334-7A18-3ADD-1AE6-895926B3CCFE" name="vw_fact_invoice_vw_dim_customer_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 12:39:33 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="6D9E882F-06C2-7584-252F-2DD45CFB69C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2B0BD8E-7A43-C814-1E96-9856F2B1A34E" name="vw_fact_invoice_vw_dim_customer_FKv1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 12:39:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="65B62128-1A4E-8DA9-E5F4-8F07465516DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

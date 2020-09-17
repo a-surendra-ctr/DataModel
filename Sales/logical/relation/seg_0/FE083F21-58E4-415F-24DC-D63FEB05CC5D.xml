@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="dim_employees_to_dim_employees_FK" directorySegmentName="seg_0" id="FE083F21-58E4-415F-24DC-D63FEB05CC5D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:43:10 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<targetPk>2A8BEE0C-7A95-5946-0A0F-6447F7CB5E39</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D3ED0B43-886B-E469-09BE-23E30A56BE72</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D3ED0B43-886B-E469-09BE-23E30A56BE72</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

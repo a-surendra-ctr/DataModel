@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.SchemaSqlServerv2k5" name="edw" directorySegmentName="seg_0" id="7B442683-4823-C921-8030-BAE96EE5E733">
+<sourceDDLFile>edw.vw_dim_product.sql</sourceDDLFile>
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 13:48:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<schemaObject>8669DC12-6F49-295B-3C55-3CC4EFB41BC3</schemaObject>
+<database>DB_NULLELEMENT</database>
+</SchemaSqlServerv2k5>

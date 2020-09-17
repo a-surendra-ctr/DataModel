@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CC775761-53BC-514E-6637-A394E1123A35" containerWithKeyObject="B8D2FAF4-2614-2853-5DB6-C9287BFC1059" localFKIndex="A6BF44B7-B530-693B-36EB-3A1BDCB97814" name="fact_transfer_invoice_dim_channel_invoice_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 17:49:21 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<referredTableLongName>edw.dim_channel_invoice</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D5A25526-1546-D443-0041-B05682445BE8</referredTableID>
+<keyObject>66AE7DAE-FF54-993D-948D-0E3DD8C3559F</keyObject>
+<referredKeyID>66AE7DAE-FF54-993D-948D-0E3DD8C3559F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>invoice_no</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+<propertyMap>
+<property name="createdByFKDiscoverer" value="true"/>
+</propertyMap>
+</FKIndexAssociation>

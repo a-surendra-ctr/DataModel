@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E0CE919-F96A-B2E7-EB73-3E700D809DFE" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="dim_employee">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:50:10 UTC</createdTime>
+<generatorID>D3ED0B43-886B-E469-09BE-23E30A56BE72</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<ordsAlias>dim_employees</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employee_key" id="DE7FBAB2-8CD3-F121-AD57-F56C941CC58D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:50:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Employee Key ]]></commentInRDBMS>
+<generatorID>471491D6-DC50-C321-A755-B7DAC851D1BE</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_number" id="340020F8-9795-44DE-4902-593DE501D616">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:50:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique employee number]]></commentInRDBMS>
+<generatorID>D2C65A61-2A44-05B3-0177-343D1E167261</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_name" id="C7582259-0CA2-7C9F-E30A-EC0F9AB05057">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:50:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[The name of the employee]]></commentInRDBMS>
+<generatorID>90D9C192-D94F-A4F6-FDB4-54DD7804C716</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email_address" id="739A84EE-C488-BC43-F1B4-60E016489AA3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:50:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[The email address of the employee]]></commentInRDBMS>
+<generatorID>E20169B4-A022-0842-BA71-9CC3A55CE4EE</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="job_title" id="CACA3095-9483-5E81-8593-F5E832C0CDA8">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:50:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[The job title of the employee]]></commentInRDBMS>
+<generatorID>F46241E6-5A71-773C-B535-290E09A1AE76</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_manager_number" id="C71B1F5D-FDBD-BCEB-A887-3C1CA034C27F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:50:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Employee number of the Manager for this employee]]></commentInRDBMS>
+<generatorID>E2ACB098-03DE-33DB-FA86-E02B6608EA35</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_manager_key" id="32313B2C-0F08-C37D-14A8-185F35ED5579">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:50:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Employee Key of the manager for this employee]]></commentInRDBMS>
+<generatorID>2A78A157-77CC-BBE6-52DE-799FC1C93A8C</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3875BAC8-E51F-A104-C985-36A1E442C9FF" referredColumn="DE7FBAB2-8CD3-F121-AD57-F56C941CC58D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="99AC4625-0ACF-B4B4-1E4C-EC4EE4FEA6EE" name="dim_employee_PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:50:10 UTC</createdTime>
+<generatorID>2A8BEE0C-7A95-5946-0A0F-6447F7CB5E39</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE7FBAB2-8CD3-F121-AD57-F56C941CC58D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="988A1C9B-1A09-0E83-6213-282F13074A07" name="dim_employee_email_address_job_title_UN">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-02 17:28:47 UTC</createdTime>
+<generatorID>137FDA07-FF5E-0906-744E-A224FC792248</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="739A84EE-C488-BC43-F1B4-60E016489AA3"/>
+<colUsage columnID="CACA3095-9483-5E81-8593-F5E832C0CDA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FF57791-3BE0-67C2-59F8-AA8F017D08A1" name="dim_employee_dim_employee_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:50:10 UTC</createdTime>
+<generatorID>FE083F21-58E4-415F-24DC-D63FEB05CC5D</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32313B2C-0F08-C37D-14A8-185F35ED5579"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

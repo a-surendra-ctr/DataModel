@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="dim_dma" directorySegmentName="seg_0" id="F11F8C94-DC4F-2452-D448-E8B245D25A1B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 12:07:40 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<schemaObject>8669DC12-6F49-295B-3C55-3CC4EFB41BC3</schemaObject>
+<database>DB_NULLELEMENT</database>
+<schema>7B442683-4823-C921-8030-BAE96EE5E733</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="zip_name" id="534724A8-5422-B21E-2BD4-F9A5E44BDB72">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 12:07:40 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dma_key" id="7F8D72D2-6A09-15C4-1E77-F1BDD0F1B270">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 12:07:40 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dma_name" id="80EA990F-D30C-EB96-465E-7A062EFD1D89">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 12:07:40 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="zip_code" id="CBFA3D3C-FFE6-F1AB-8E22-377040809117">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 12:07:40 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="dim_dma_PK" id="33CEF064-EA8F-038B-FAAA-613AF812E1E4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 12:07:40 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

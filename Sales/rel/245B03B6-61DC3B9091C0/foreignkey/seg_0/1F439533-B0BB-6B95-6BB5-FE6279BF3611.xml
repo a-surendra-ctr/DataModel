@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1F439533-B0BB-6B95-6BB5-FE6279BF3611" containerWithKeyObject="D0659B66-4C99-12F5-3D75-B0FA5126F8F9" localFKIndex="D36D3DE3-339D-ECA2-6961-B236801AF9C6" name="fact_market_share_dim_customer_group_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:12:50 UTC</createdTime>
+<generatorID>31FDD6C0-8A2E-4750-01FC-B8C619B5FDC3</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<referredTableLongName>edw.dim_customer_group</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E7B64BF7-A97A-F1B6-D76C-35E57029DDE7</referredTableID>
+<keyObject>1C988481-430E-DFFE-E3B6-F1784E25167F</keyObject>
+<referredKeyID>1C988481-430E-DFFE-E3B6-F1784E25167F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>customer_group_key</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

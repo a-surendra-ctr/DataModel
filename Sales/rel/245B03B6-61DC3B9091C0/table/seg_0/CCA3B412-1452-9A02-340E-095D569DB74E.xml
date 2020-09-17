@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CCA3B412-1452-9A02-340E-095D569DB74E" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="fact_demand_forecast">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 12:08:56 UTC</createdTime>
+<generatorID>301248AE-D03A-691B-EE3F-1A257D9D5191</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="area" id="41795C16-8D09-F204-0620-2809B64D3228">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 12:08:56 UTC</createdTime>
+<generatorID>8EBAB536-4967-27BF-B749-CE84BB56E4CC</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="year" id="BC8C1D21-68C2-5B47-306C-363192BB3C21">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 12:08:56 UTC</createdTime>
+<generatorID>B8E14FE3-15DE-5F99-6FE4-5DB60CF38D0B</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="month" id="A73A3686-445A-8986-1EBE-1D0E1776A702">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 12:08:56 UTC</createdTime>
+<generatorID>B57D574C-EB0F-6350-41DF-4B91CF98CDE3</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_key" id="16BDE796-A762-DD7F-04AF-18B80A8C3B70">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 12:08:56 UTC</createdTime>
+<generatorID>D5C7DD07-AE1A-844D-5C0C-FBAD365915E4</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A49D9EFA-0499-F1D8-22F1-4094B2237D0A" referredColumn="3104F473-7891-10BF-7A4A-9F8513892771"/>
+</associations>
+</Column>
+<Column name="lag" id="9447A874-39A0-21FE-1412-D11FE42D569A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 12:08:56 UTC</createdTime>
+<generatorID>DE30813E-9E99-0ED3-2646-AA194F7DE05D</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="normal_demand" id="47ABE767-8243-C6FF-4EDF-DDF286FA5424">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 12:08:56 UTC</createdTime>
+<generatorID>C04AA0D6-1FAE-857E-4007-C2D0C4FA6103</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,19,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="statistical_forecast" id="5546CC84-3225-981F-8E8E-33F271B39E02">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 12:08:56 UTC</createdTime>
+<generatorID>C931B8CA-B7C9-85EC-FB37-791C2D352069</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,19,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="commercial_forecast" id="7CE01C4C-49BF-D2E4-6744-8AECA39E0F2F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 12:08:56 UTC</createdTime>
+<generatorID>4730ECBB-3163-D7F8-44D9-64EF7421AFE2</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,19,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sales_review" id="517C03B7-DF25-FC88-0E17-414E1BD04034">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 12:08:56 UTC</createdTime>
+<generatorID>E8AF9616-D6A4-A60B-CE56-63FA9D1FE121</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,19,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27888E4D-7D22-B541-A2ED-8152AF98F681" name="fact_demand_forecast_area_year_month_lag_product_key_UN">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 12:08:56 UTC</createdTime>
+<generatorID>7D347CB5-88E2-29C4-E063-AF7E815832AF</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41795C16-8D09-F204-0620-2809B64D3228"/>
+<colUsage columnID="BC8C1D21-68C2-5B47-306C-363192BB3C21"/>
+<colUsage columnID="A73A3686-445A-8986-1EBE-1D0E1776A702"/>
+<colUsage columnID="9447A874-39A0-21FE-1412-D11FE42D569A"/>
+<colUsage columnID="16BDE796-A762-DD7F-04AF-18B80A8C3B70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43AA5F06-2125-F1FF-6AE5-27FA631D727F" name="fact_demand_forecast_dim_product_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 12:08:56 UTC</createdTime>
+<generatorID>2BB0BF16-2D0A-72F9-884B-1A3EAF0114EA</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16BDE796-A762-DD7F-04AF-18B80A8C3B70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

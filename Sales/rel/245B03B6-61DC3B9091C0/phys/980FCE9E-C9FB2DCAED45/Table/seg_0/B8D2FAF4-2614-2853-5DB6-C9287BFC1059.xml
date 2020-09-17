@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="fact_transfer_invoice" directorySegmentName="seg_0" id="B8D2FAF4-2614-2853-5DB6-C9287BFC1059">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<schemaObject>8669DC12-6F49-295B-3C55-3CC4EFB41BC3</schemaObject>
+<database>DB_NULLELEMENT</database>
+<schema>7B442683-4823-C921-8030-BAE96EE5E733</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="company_id" id="05FCFC4C-BFA1-24B2-647C-932D1C94DFBE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cogs_amount_actual" id="0745E532-D7F3-781F-7AAA-AA7B6DCE7AE4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cogs_amount_refund" id="3052296E-4627-4057-A9B3-C34F338CD3E2">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="quantity" id="4113070A-BEA6-50F3-5A47-49535D50199E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 12:05:22 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vendor_id" id="445EE74D-ECFC-A81F-FC45-2EB5D25728AF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="invoice_amount" id="4B2F29DB-76FA-60E8-6693-9C48A72FC073">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="sales_location_key" id="5C51FDD4-8B51-C100-41FF-D28A8A020889">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="customer_key" id="62E374D1-FA1A-9DFF-49D6-2530042D88BC">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="sales_tax_amount" id="69C54BC5-1D10-019A-CF70-CB56AE3CA989">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 12:05:22 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="unit_price" id="6B4923AA-70FC-1EEE-17D3-9A4E05B449A8">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="qty_shipped_br" id="6BD9A639-3D8E-D2E5-F504-9C343B61F24D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 12:05:22 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="extended_price" id="86A6767E-7184-5176-B4AC-C960952FEA9B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="date_key" id="8C3AE63B-F2CE-EA35-6218-E2DD7CA7D58C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="total_amount_billed" id="97977A3C-A988-4FAA-BA77-182288F68AF5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 12:05:22 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="branch_location_key" id="97EBF0DB-A31F-488F-9788-5B5B3AD3850F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="ship_to_key" id="9D147F3F-0308-0501-D41F-A3D273EC725B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="po_no" id="C575DF32-179E-F0E6-64F8-F3D8A286414C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="unit_cost_invoiced_commission" id="D8AAE9A6-2707-14C3-A24F-6C8802438120">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 12:05:22 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="supplier_id" id="E211ADEB-C3D7-7A60-BB0B-956F6AE96BAE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="order_no" id="EE285121-513C-2480-6D70-741C2CCEC379">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="terms_discount_pct" id="F5CD0B29-BCD2-7398-3ADE-A13C67482A52">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 12:05:22 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="invoice_no" id="FE39B5D2-4A9E-5830-3BC5-9FABFD84CA60">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="product key" id="FF096C04-4BC7-A2EB-A45F-09C402B571CE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 07:49:52 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_transfer_invoice_dim_location_FK" id="0CB0AF59-CA3C-565D-03AD-5FB14E85F69B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:57:55 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_transfer_invoice_dim_customer_FK" id="4B3181E3-B80B-8C0C-1AED-F5DA88462BBF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-02 16:56:16 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_transfer_invoice_dim_ship_to_FK" id="5971C10B-4E01-2DCC-A0EB-155A133A2E5E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:57:55 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_transfer_invoice_dim_channel_invoice_FK" id="A6BF44B7-B530-693B-36EB-3A1BDCB97814">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 17:49:21 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_transfer_invoice_dim_location_FK" id="B0477EC9-F0B7-7E29-4FF0-05671A1C75DE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 18:37:44 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_transfer_invoice_dim_date_FK" id="D8038902-0798-2629-5F5A-E27D907D5030">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:57:55 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_transfer_invoice_dim_location_FKv1" id="E714E593-4137-D2B0-F292-A2726FBAE454">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:57:55 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_transfer_invoice_dim_product_FK" id="F9A9A181-DC27-BF40-E424-B4C47D412829">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:57:55 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="fact_transfer_invoice_PK" id="A767714F-3A81-6890-0447-9D597E9B579F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 12:05:22 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

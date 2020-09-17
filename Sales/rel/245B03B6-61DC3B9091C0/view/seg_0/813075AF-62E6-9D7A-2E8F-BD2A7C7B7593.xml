@@ -1,0 +1,442 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="813075AF-62E6-9D7A-2E8F-BD2A7C7B7593" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="vw_dim_ship_to">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<ordsAlias>v_dim_ship_to</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT edw.dim_ship_to.ship_to_key AS [Ship to Key],
+  edw.dim_ship_to.ship_to_id AS [Ship to id],
+  edw.dim_ship_to.name AS [Ship to],
+  CAST(CASE
+    WHEN SubString(edw.dim_ship_to.name, 1, 3) = 'TLC' THEN
+    Upper(SubString(edw.dim_ship_to.name, 9, 1)) +
+    Lower(SubString(edw.dim_ship_to.name, 10, DataLength(edw.dim_ship_to.name)))
+    ELSE edw.dim_ship_to.name END AS VARCHAR(50)) AS [Ship to Name],
+  edw.dim_ship_to.customer_id AS [Customer id],
+  edw.dim_ship_to.default_branch AS [Primary TLC],
+  edw.dim_ship_to.delete_flag AS [Delete Flag],
+  edw.dim_ship_to.address1 AS Address,
+  edw.dim_ship_to.address2 AS Address2,
+  edw.dim_ship_to.city AS City,
+  edw.dim_ship_to.state AS State,
+  edw.dim_ship_to.postal_code AS [Postal Code],
+  edw.dim_ship_to.country AS Country,
+  edw.dim_ship_to.central_phone_number AS [Phone Number],
+  edw.dim_ship_to.county AS County,
+  edw.dim_ship_to.sp01_barn_tier1p_flag AS [sp01 barn tier1p flag],
+  edw.dim_ship_to.sp02_bsad_flag AS [sp02 bsad flag],
+  edw.dim_ship_to.sp03_g3x_flag AS [sp03 g3x flag],
+  edw.dim_ship_to.sp05_toyo_p_flag AS [sp05 toyo p flag],
+  edw.dim_ship_to.sp11_g3x_comm_flag AS [sp11 g3x comm flag],
+  edw.dim_ship_to.preferred_location_id AS [Preferred Location id],
+  edw.dim_ship_to.preferred_location_id_2 AS [Preferred Location id 2],
+  edw.dim_ship_to.preferred_location_id_3 AS [Preferred Location id 3],
+  edw.dim_ship_to.channel AS Channel,
+  edw.dim_ship_to.keyaccount AS [Key Account],
+  edw.dim_ship_to.segment AS Segment,
+  edw.dim_ship_to.customer_key AS [Customer Key],
+  edw.dim_ship_to.program_dealer_flag AS [Program Dealer Flag],
+  edw.dim_ship_to.program_dealer_begin_date AS [Program Dealer Begin Date],
+  edw.dim_ship_to.program_dealer_end_date AS [Program Dealer End Date]
+FROM edw.dim_ship_to]]></userDefinedSQL>
+<parsed>true</parsed>
+<syntaxProvider>MSSQL</syntaxProvider>
+<originalTableID>7E68BA01-4FA6-D1EE-19C4-25DB523CFBDE</originalTableID>
+<includeSchemaNameInQuery>true</includeSchemaNameInQuery>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Ship to Key]" id="1865CC49-01DF-2117-E3A5-966960C86793">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[ship_to_key]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Ship to Key]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_ship_to.ship_to_key</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Ship to id]" id="51E5D4F7-CB34-64D3-D7C1-462E772301BA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[What is the ship_to location for this ship to jurisdiction?
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Ship to id]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_ship_to.ship_to_id</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Ship to]" id="CE0091D8-AE73-72A9-F583-ADEC363A9918">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the name of the ship to location 
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Ship to]</alias>
+<dataType>VARCHAR (50)</dataType>
+<expression>edw.dim_ship_to.name</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Ship to Name]" id="21E67F74-EF4A-4DA4-2E48-856D82A59C9B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:55:09 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Ship to Name]</alias>
+<dataType>VARCHAR(100)</dataType>
+<expression>Cast(Case When SubString(edw.dim_ship_to.name, 1, 3) = &apos;TLC&apos; Then Upper(SubString(edw.dim_ship_to.name, 9, 1)) + Lower(SubString(edw.dim_ship_to.name, 10, DataLength(edw.dim_ship_to.name))) Else edw.dim_ship_to.name End As VARCHAR(50))</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Customer id]" id="0CD588CA-14A6-1569-4538-EA6218E14CC3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer_id]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Customer id]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_ship_to.customer_id</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Primary TLC]" id="AD3F0487-F60A-D862-0F8A-65279865DC20">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[What is the default branch for this ship-to?]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Primary TLC]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_ship_to.default_branch</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Delete Flag]" id="BB0B9292-EA4D-4594-4109-8EFA841D9FFB">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicates if record is marked as deleted.]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Delete Flag]</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_ship_to.delete_flag</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Address" id="39EF8DB7-FA93-8495-A1EE-97E3F289DE74">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[What is the first line of the physical address for this address?
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Address</alias>
+<dataType>VARCHAR (50)</dataType>
+<expression>edw.dim_ship_to.address1</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Address2" id="74405776-E7BE-4C20-BF42-4F7FBFFA866B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[What is the second line of the physical address for this address?
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Address2</alias>
+<dataType>VARCHAR (50)</dataType>
+<expression>edw.dim_ship_to.address2</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="City" id="8F3F0233-2428-40A8-0CA8-F82469117AC0">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[What is the city of the physical address for this address?
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>City</alias>
+<dataType>VARCHAR (50)</dataType>
+<expression>edw.dim_ship_to.city</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="State" id="D00DD066-30BC-1451-F935-142E5D5C93EC">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[What is the state or province of the physical address for this address?
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>State</alias>
+<dataType>VARCHAR (50)</dataType>
+<expression>edw.dim_ship_to.state</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Postal Code]" id="89BFF34C-E3EB-1654-F40B-CABFFBB75EC9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[What is the postal code of the physical address for this address?
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Postal Code]</alias>
+<dataType>VARCHAR (10)</dataType>
+<expression>edw.dim_ship_to.postal_code</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Country" id="305E5A15-98C8-3A6F-DE96-077A65921964">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[What is the country of the physical address for this address?
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Country</alias>
+<dataType>VARCHAR (10)</dataType>
+<expression>edw.dim_ship_to.country</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Phone Number]" id="AA80805D-8AAF-1041-A68B-39F3B2F3A8B5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Phone Number]</alias>
+<dataType>VARCHAR (20)</dataType>
+<expression>edw.dim_ship_to.central_phone_number</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="County" id="80D6E9B9-075C-86DE-F3C9-BC760B738F2A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[What is the county of the physical address for this address?
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>County</alias>
+<dataType>VARCHAR (30)</dataType>
+<expression>edw.dim_ship_to.county</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[sp01 barn tier1p flag]" id="BE3CF96B-824F-335E-A586-52263DF99395">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[ud_Sales Program 1
+
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[sp01 barn tier1p flag]</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_ship_to.sp01_barn_tier1p_flag</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[sp02 bsad flag]" id="640B462E-E75D-ED67-F2B2-246411C2CEA9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[ud_Sales Program 2
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[sp02 bsad flag]</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_ship_to.sp02_bsad_flag</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[sp03 g3x flag]" id="4C7D1F75-2208-BE78-72F4-F2FFEBFCC8FB">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[ud_Sales Program 3
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[sp03 g3x flag]</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_ship_to.sp03_g3x_flag</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[sp05 toyo p flag]" id="801AC5D3-ABCB-3D7C-CA4E-9D5FABA9A95F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[ud_Sales Program 5
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[sp05 toyo p flag]</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_ship_to.sp05_toyo_p_flag</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[sp11 g3x comm flag]" id="FFF32088-2A53-D533-0DEA-26A0F81CE655">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[ud_Sales Program 11
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[sp11 g3x comm flag]</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_ship_to.sp11_g3x_comm_flag</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Preferred Location id]" id="754CDBFA-C87C-1297-6D48-2AF8C59E5A64">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Preferred location for ship_to_id]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Preferred Location id]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_ship_to.preferred_location_id</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Preferred Location id 2]" id="794CA734-B2F9-B761-A284-21DF01146E21">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[2nd' Preferred location for ship_to_id ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Preferred Location id 2]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_ship_to.preferred_location_id_2</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Preferred Location id 3]" id="DAA7B292-D1F5-1DE9-13C8-655F5A8C47A1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[3rd' Preferred location for ship_to_id ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Preferred Location id 3]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_ship_to.preferred_location_id_3</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Channel" id="61D678B3-DA83-24B0-50B6-D9E06B7D6F4A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The current channel for the ship_to]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Channel</alias>
+<dataType>VARCHAR (50)</dataType>
+<expression>edw.dim_ship_to.channel</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Key Account]" id="9B7FE7DA-7B02-175B-D23A-83D062DFC02E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The current keyaccount  for the ship_to]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Key Account]</alias>
+<dataType>VARCHAR (50)</dataType>
+<expression>edw.dim_ship_to.keyaccount</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Segment" id="7838AFBF-3365-9D1D-67DC-539FBEE3ACB9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The current segment  for the ship_to]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Segment</alias>
+<dataType>VARCHAR (50)</dataType>
+<expression>edw.dim_ship_to.segment</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Customer Key]" id="A1D366A0-50AF-B8A4-F2BE-E7463F3467B5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Customer Key]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_ship_to.customer_key</expression>
+<reference>false</reference>
+<referencedColumn>096927E4-7E7B-4A57-26B0-366FCFF313A9</referencedColumn>
+<referencedColumnViewID>57C4F61A-58F0-7E87-1918-43DDDEE01FA8</referencedColumnViewID>
+<associations>
+<colAssociation fkAssociation="B47E1273-BC6A-7FC3-8779-71B3856FE4B8" referredColumn="57C4F61A-58F0-7E87-1918-43DDDEE01FA8"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Program Dealer Flag]" id="EDDDB879-0140-3064-D71C-E42C2C4F9D35">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Program Dealer Flag]</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_ship_to.program_dealer_flag</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Program Dealer Begin Date]" id="BF2E5414-9047-EC50-E192-1E980B0A83AE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Program Dealer Begin Date]</alias>
+<dataType>DATE</dataType>
+<expression>edw.dim_ship_to.program_dealer_begin_date</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Program Dealer End Date]" id="8E9B0D57-2ACA-3CC2-B9E4-EBAD0BB7C246">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Program Dealer End Date]</alias>
+<dataType>DATE</dataType>
+<expression>edw.dim_ship_to.program_dealer_end_date</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="A578D196-B612-56AA-B71B-4AE0F5CD7FF1" name="vw_dim_ship_to_PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:55:09 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="1865CC49-01DF-2117-E3A5-966960C86793"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FC65B7A-14EE-3586-CDB7-4D1FCC643437" name="vw_dim_ship_to_vw_dim_customer_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 13:21:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="A1D366A0-50AF-B8A4-F2BE-E7463F3467B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

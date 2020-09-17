@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fact_po_acknowledgements_dim_date_required_fk" directorySegmentName="seg_0" id="89296B05-2559-9EE2-C33C-7C18D8E1673F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 20:42:13 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<sourcePk>39117D48-FA79-6683-6E39-43F2EFC32FE4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3F5D1BDF-621F-7147-E7AC-B4050322DF43</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D53FBEB6-9A94-95F4-D70B-B415AFE63B67</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

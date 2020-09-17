@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7B64BF7-A97A-F1B6-D76C-35E57029DDE7" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="dim_customer_group">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:12:50 UTC</createdTime>
+<generatorID>9DD02BDD-2B9B-94CC-958F-0915444EB533</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customer_group_key" id="44393951-8CA9-AA49-EFB7-E591D7E6C634">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:12:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique Customer Group Key]]></commentInRDBMS>
+<generatorID>7A85DB1A-5ED3-D120-E0B0-DE7B2F39A1B2</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_group_name" id="AC267171-ED57-6F32-FA6A-5E7A3F5E8EB2">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:12:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Customer Group Name]]></commentInRDBMS>
+<generatorID>1702BF58-589B-239D-1363-901C9D19EC56</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="supplier" id="BBCAC1E5-1750-606C-E39C-0FE895570BA3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:12:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[The supplier (Bridgestone/ GoodYear/ Toyo)]]></commentInRDBMS>
+<generatorID>DDE1202B-8471-2846-1D32-39E8322B46A0</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="supplier_short_name" id="3852242C-22D7-B0DB-7844-2C062C7CD331">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:12:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[The supplier short name (BR/GY/TY)]]></commentInRDBMS>
+<generatorID>A03D4C6C-718A-D12E-B3F0-AA84298872A7</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_group_short_name" id="DF52E9E4-E22F-CD73-3831-40DF614BCF3D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:12:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Group Short Name]]></commentInRDBMS>
+<generatorID>8912FC00-9A2D-423B-2FF9-353A0205B3DC</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1C988481-430E-DFFE-E3B6-F1784E25167F" name="dim_customer_group_PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:12:50 UTC</createdTime>
+<generatorID>78EA68AF-49B5-183A-844C-860F4B430E95</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44393951-8CA9-AA49-EFB7-E591D7E6C634"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

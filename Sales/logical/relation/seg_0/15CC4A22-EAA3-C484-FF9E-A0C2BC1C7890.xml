@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="dim_channel_invoice_dim_ship_to_fk" directorySegmentName="seg_0" id="15CC4A22-EAA3-C484-FF9E-A0C2BC1C7890">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 14:54:02 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<sourcePk>8087388B-0C50-B4CA-8E02-B71E93FE764D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FD543F81-081D-3975-00E5-1249B5855D7A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D90D8ADF-8023-4102-8D5E-72F11C43D49B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

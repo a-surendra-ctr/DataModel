@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79F3A24F-AEC1-2A1E-1BC3-F0CD6DA8F494" name="dim_user">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:13:39 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user_key" id="E4F00CEB-862B-7AF3-C42C-CA495E5BD2A3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:23:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[The user key for the user]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_id" id="E3625196-4CDC-7C79-5BF6-CC92970BD111">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:24:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique user identifier]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="2A10C930-F230-6296-129F-515445C7DC86">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:24:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[User name]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="active" id="9735FCD8-BCAC-CE6E-02D8-41CAD9B5C7E5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:25:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flag indicating if user is active]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="delete_flag" id="4A20A2B1-1553-B6D2-C296-E744779EA549">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:26:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Record flagged as delete (exclude from reports)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email_address" id="C3DDE7F5-1399-49B4-3728-F9CA37CDE9E2">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:27:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Uuser email address]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role" id="A30D1B01-5E46-8ADB-699F-B41749FF5A6E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:27:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[User role]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="61E5BA3E-07EE-9ADD-A7D9-133DB3D6A19B" name="dim_user PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:01:51 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>E4F00CEB-862B-7AF3-C42C-CA495E5BD2A3</newElementsIDs>
+<usedAttributes>
+<attributeRef>E4F00CEB-862B-7AF3-C42C-CA495E5BD2A3</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0623F4F5-FE30-F3F6-E17A-ACD0921A8452" name="dim_user_UQ">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:13:53 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="false"/>
+</engineerTo>
+<newElementsIDs>E3625196-4CDC-7C79-5BF6-CC92970BD111</newElementsIDs>
+<usedAttributes>
+<attributeRef>E3625196-4CDC-7C79-5BF6-CC92970BD111</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

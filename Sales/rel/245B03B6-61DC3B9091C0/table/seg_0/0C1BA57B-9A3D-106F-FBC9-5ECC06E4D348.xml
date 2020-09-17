@@ -1,0 +1,553 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0C1BA57B-9A3D-106F-FBC9-5ECC06E4D348" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="dim_date">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<generatorID>3F5D1BDF-621F-7147-E7AC-B4050322DF43</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="date_key" id="4299DD46-E26F-144D-481C-888628C4B086">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[date_key : The uniuqe date identifier for the date based on the combination of 
+Year_Month_Date in the format of YYYYMMDD
+]]></commentInRDBMS>
+<generatorID>7AD34AEB-4BD6-9557-E4A7-42BDD03D36E9</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_seq" id="2E092213-1FB9-EF6B-22B3-AB81A23341AF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Incrementing sequential number starting from 1  ]]></commentInRDBMS>
+<generatorID>F816C1A9-5B59-E070-7872-E455EE9644B5</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="FD3E8935-DEEC-3BA6-4EC1-EDA07BDE172A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date]]></commentInRDBMS>
+<generatorID>EC7B1F41-C04F-A7AD-D291-BC9F8FC2FEAD</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7DC04A03-2557-6BF8-CD8F-E683E102AB88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="full_date" id="7DE54AAD-7A5B-BA62-1752-31B9182E50D7">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date in the format of DD/MM/YYYY]]></commentInRDBMS>
+<generatorID>C7E5D3B6-6484-E276-5C32-48409B456E7A</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="day_of_month" id="8F5C757C-8342-1A07-B915-C6EE8E01D2FB">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[The day of the month]]></commentInRDBMS>
+<generatorID>B53A52A0-BE5A-F1C6-66A6-F3A0282004B8</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="day_name" id="D4963370-C31A-5ABE-676F-2F72442A72C6">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[The name of the day (Monday through sunday)
+]]></commentInRDBMS>
+<generatorID>45626A6F-0111-EF71-9695-9AF91CF92958</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="day_of_week" id="C70B64E2-83A0-81EF-FAF1-B02560471BA3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Day of the week ]]></commentInRDBMS>
+<generatorID>70F26ADE-FA57-1310-FA79-46769C83CED1</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="day_of_week_in_month" id="02D8C4B6-9EEE-F867-2A18-7E6D82792F34">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Day of week in the month]]></commentInRDBMS>
+<generatorID>C7603207-479B-D8D9-93D1-6A38A54FA1B7</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="day_of_week_in_year" id="EBC282AF-271C-E401-C31A-97BDDD77FB29">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Day of week in the year
+
+
+]]></commentInRDBMS>
+<generatorID>A8B77BBD-12B9-4E5D-A66A-557244817197</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="day_of_quarter" id="BA4B64A4-B32A-1299-A123-CC277C507F4B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[day of quarter]]></commentInRDBMS>
+<generatorID>6829F05C-A0E4-3EF6-660F-706392EA9458</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="day_of_year" id="28BCCBA7-D922-7A55-AA66-0F61877BCE55">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[day of the year]]></commentInRDBMS>
+<generatorID>C6A860D7-9B74-04F5-4A77-3AB57E6B700A</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="week_of_month" id="7D0148EE-3719-587E-3A29-CC2C9BA4F16C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[what week is it in the month]]></commentInRDBMS>
+<generatorID>CECF4616-6E43-8C03-7FF0-F2CA0618CD2E</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="week_of_quarter" id="A1BE2700-F62A-58FD-8B16-3CCF07B5BC71">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[what is the week in the quarter]]></commentInRDBMS>
+<generatorID>9136EEC0-6562-C0C4-F359-D160EF9B62FB</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="week_of_year" id="C95A29FF-DAFD-E0A5-7163-811BE9B8D363">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[what week is it in the year]]></commentInRDBMS>
+<generatorID>B8D1437E-6222-B333-6488-F6C5DAA6DD9D</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="month" id="57E00196-8339-57C8-7FBF-B77A481F8AB5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Month number]]></commentInRDBMS>
+<generatorID>60EBB7EA-7180-3B7E-A829-B4F5040B9DF1</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="month_name" id="257F37FA-B8D1-2073-F14C-2EF55A5BF1C9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Month name (January through December)]]></commentInRDBMS>
+<generatorID>0C0D5F90-97F6-2F11-7A54-E27B77D2D27A</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="month_of_quarter" id="D3A1327E-5C12-F43B-B656-9916AA6C4A01">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Month number of the quarter]]></commentInRDBMS>
+<generatorID>B424A442-8E7C-446B-E2A8-404AD558C052</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quarter" id="450FF8B6-874B-CD05-9205-7CDB762C2A74">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quarter number(1 through 4 ) ]]></commentInRDBMS>
+<generatorID>A5DE42A4-3C8C-DB3B-B2A9-EE3498FFA22C</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="year" id="6591587A-787B-3355-B7EC-D154EE2099CA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Year number ]]></commentInRDBMS>
+<generatorID>B9951B80-DEF5-A6FB-850C-10376041CEDC</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="month_year" id="920812D9-0C1A-8D9B-B2A0-EA95EF6AC045">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Month year in the format (MMM-YYYY)]]></commentInRDBMS>
+<generatorID>5DCC4F86-032F-5F5C-5A14-78AEF2E6867B</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="yyyymm" id="96E6ABF5-489F-5516-8C65-B6AF33676A51">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date in the format YYYYMM ]]></commentInRDBMS>
+<generatorID>6F280C67-AE73-CA58-73C7-999C8A9388EE</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="yyyyww" id="5C8C9C98-B5E1-99BD-A747-D8BEAF1F218D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date in the format YYYYWW]]></commentInRDBMS>
+<generatorID>CC8FEF90-5613-7A10-CF2B-9B6416080C37</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="year_quarter" id="5A1E2F44-E312-87EF-E950-864C41729A96">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date in the Year quarter format YYYYQ]]></commentInRDBMS>
+<generatorID>971F6603-4EA5-99C0-56BF-96534519F219</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="month_name_short" id="06012051-0F1C-47FA-C6DB-9CCE798F4FD1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Short name for the month (Jan through Dec)
+
+]]></commentInRDBMS>
+<generatorID>1A144B64-6300-2962-F2BA-1EB5F990B394</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quarter_name" id="C30543A4-7E65-C579-100C-2E0C694A3922">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quarter name (Q1 through Q4)
+]]></commentInRDBMS>
+<generatorID>6524D9EB-98E6-52F3-FD6D-E1D68C798F07</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="days_in_month" id="8A2C6523-35CE-AACB-A5EC-DCF08E8A24BF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Number of days in a given month  (28,29,30,31)]]></commentInRDBMS>
+<generatorID>94B64533-EDAC-DA05-FA9D-471062A93CA3</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="days_in_quarter" id="DAFC7D05-D193-3867-2492-9B4FC36B5C81">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Number of days in a quarter (90,91,92)]]></commentInRDBMS>
+<generatorID>2872FDB6-26D8-463E-A5AA-1E3046C71A55</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="days_in_year" id="09F78126-E1C7-1F36-3C47-078D1FEF1211">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Number of days in a year (365 or 366)]]></commentInRDBMS>
+<generatorID>FCAF4E0B-062A-4FDE-8E09-350B126B8DEE</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_day_of_month" id="24D80D98-B374-3707-F880-DF2E82CF58CA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[First day of the month in the format YYYY-MM-DD]]></commentInRDBMS>
+<generatorID>11C0CF33-9F5A-FD93-4A40-3012BE2F5E92</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7DC04A03-2557-6BF8-CD8F-E683E102AB88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_day_of_month" id="0C657063-4457-A9BD-0CA3-7C748E05DE94">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Last day of the month in the format YYYY-MM-DD]]></commentInRDBMS>
+<generatorID>BB69170C-78FE-8215-DB6D-DD4393705823</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7DC04A03-2557-6BF8-CD8F-E683E102AB88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_day_of_quarter" id="922CB3FD-5D17-441A-ADDA-EB33C6C02989">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[First day of the quarter in the format YYYY-MM-DD]]></commentInRDBMS>
+<generatorID>D8FF3413-4E7A-5137-89C2-60214858CF03</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7DC04A03-2557-6BF8-CD8F-E683E102AB88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_day_of_quarter" id="17EB964E-934D-6250-6745-76F15410A982">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Last day of the quarter in the format YYYY-MM-DD]]></commentInRDBMS>
+<generatorID>0F4F88DE-EDAB-052E-B6E4-50EFD690A5FB</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7DC04A03-2557-6BF8-CD8F-E683E102AB88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_day_of_year" id="A9653767-2D0E-3EE6-8EBF-2C31B911EC30">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[First day of the year  in the format YYYY-MM-DD]]></commentInRDBMS>
+<generatorID>BEC321FA-18DD-CDED-875B-67392201EE37</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7DC04A03-2557-6BF8-CD8F-E683E102AB88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_day_of_year" id="101E85BC-F654-8816-EF7B-1721BEE1E0A6">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of the year  in the format YYYY-MM-DD]]></commentInRDBMS>
+<generatorID>D28C8013-58D7-E623-514C-0CA7E3CADEA6</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7DC04A03-2557-6BF8-CD8F-E683E102AB88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_holiday" id="AAC2EE60-C966-8905-1574-8EEA19A59BA7">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[is the give date a holiday ?]]></commentInRDBMS>
+<generatorID>712D4490-E89F-C5F9-4475-3E665AC4348A</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<domain>38D0F76D-5302-68D0-2A43-4DA6A7C9BC2A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_weekday" id="23EDF311-0C97-FE86-B797-F1D2351FD52A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Is the given day a weekday ?]]></commentInRDBMS>
+<generatorID>8DCA4AB8-E579-749E-AD2E-FE9175EDB474</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<domain>38D0F76D-5302-68D0-2A43-4DA6A7C9BC2A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="holiday" id="61E7A519-DEF3-6F44-AE14-A41D9BA5579D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[The name of the holiday for example (Christmas , Independence day etc)]]></commentInRDBMS>
+<generatorID>5199156D-FE15-B13B-77F6-139CBED31EC8</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5D181C09-03DD-3812-7AC7-B348D1F685BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="day_factor" id="B3F508A0-BEBA-D0B1-2229-FBC3ABACE474">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Day factor (1 for Weekday , 0.5 for Saturday and 0 for Sunday)]]></commentInRDBMS>
+<generatorID>3A92D0B4-A926-69B5-BA94-80AF5A89850A</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,2,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59EF5B23-FC07-EA7F-7ABF-4E73D0B6ED96" name="dim_date_PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<generatorID>39117D48-FA79-6683-6E39-43F2EFC32FE4</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4299DD46-E26F-144D-481C-888628C4B086"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

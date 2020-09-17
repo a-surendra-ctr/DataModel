@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="252D6DF4-E21B-9852-0622-662BA63FF380" name="dim_dma">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 11:45:13 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="dma_key" id="757739AF-2802-B51F-F4A3-5F4A38C554F8">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 11:45:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Primary Key dma_key]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dma_name" id="5171A8E1-BCDB-EB5D-8B2A-79A9FD768F01">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 11:45:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[The DMA Name (Designated Market Area)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postal_code" id="5B76B040-CA1E-8149-D839-C87E3B7D3D22">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 11:45:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Zip code ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postal_code_name" id="FD1F5C23-25C3-E523-5F19-460FD4084DD9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 11:45:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Zip Name]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="100638B5-2D5A-E9D1-6682-86A5929D38E7" name="dim_dma PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 11:50:03 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>757739AF-2802-B51F-F4A3-5F4A38C554F8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

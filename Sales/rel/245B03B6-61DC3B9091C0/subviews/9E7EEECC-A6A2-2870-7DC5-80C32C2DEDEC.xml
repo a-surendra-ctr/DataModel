@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="From_LM_Market_Share" id="9E7EEECC-A6A2-2870-7DC5-80C32C2DEDEC">
+<createdBy>EI11736</createdBy>
+<modifiedBy>EI11736</modifiedBy>
+<createdTime>2020-09-09 13:57:48 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<generatorId>9FC6A57B-AF23-9620-A4B4-8F6BBF2042D9</generatorId>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="0C1BA57B-9A3D-106F-FBC9-5ECC06E4D348" otype="Table" vid="5ED9FF31-A47B-9CCC-5877-87C61CC69849">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1080" y="37" width="241" height="578"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D0659B66-4C99-12F5-3D75-B0FA5126F8F9" otype="Table" vid="F921E889-6DCD-ABE8-4566-6502C5E31D94">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="599" y="78" width="370" height="186"/>
+<generatorID>34A229C4-8219-7552-6D0A-1B20420767D7</generatorID>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-6684775</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Comments</foType>
+<colorRGB>-12566464</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E7B64BF7-A97A-F1B6-D76C-35E57029DDE7" otype="Table" vid="E5ED56E1-6845-E981-3415-D9E88D802499">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="679" y="385" width="264" height="120"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F11F8C94-DC4F-2452-D448-E8B245D25A1B" otype="Table" vid="12877C03-6246-E0DC-5C33-AEF7395583AD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="249" y="159" width="194" height="117"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="1F439533-B0BB-6B95-6BB5-FE6279BF3611" otype="FKIndexAssociation" vid_source="E5ED56E1-6845-E981-3415-D9E88D802499" vid_target="F921E889-6DCD-ABE8-4566-6502C5E31D94">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="811" y="385"/>
+<point x="811" y="264"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="ADA8135B-FFF3-3F7D-8DEF-8944EE7E6D27" otype="FKIndexAssociation" vid_source="12877C03-6246-E0DC-5C33-AEF7395583AD" vid_target="F921E889-6DCD-ABE8-4566-6502C5E31D94">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="443" y="211"/>
+<point x="599" y="211"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="DC514C8F-1B72-718D-EEF9-74896B0128E7" otype="FKIndexAssociation" vid_source="5ED9FF31-A47B-9CCC-5877-87C61CC69849" vid_target="F921E889-6DCD-ABE8-4566-6502C5E31D94">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1080" y="171"/>
+<point x="969" y="171"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

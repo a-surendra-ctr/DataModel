@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F144487F-22C0-126C-0010-44112C3F26E8" containerWithKeyObject="4187A93E-9AFA-81C6-3876-DA6ADCCB3E88" localFKIndex="6DBAAB2B-96D3-39FA-93A2-330A413BCFF6" name="vw_fact_fill_rate_vw_dim_location_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:29:36 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<referredTableLongName>edw.vw_dim_location</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DA3F96A3-067F-BED1-B038-670AB515A3A9</referredTableID>
+<keyObject>6C14F747-4451-DBF3-C592-C16F106ACF94</keyObject>
+<referredKeyID>6C14F747-4451-DBF3-C592-C16F106ACF94</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>[Location Key]</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D0659B66-4C99-12F5-3D75-B0FA5126F8F9" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="fact_market_share">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 13:57:48 UTC</createdTime>
+<generatorID>0C046950-6DB6-07DC-0FFD-7EDDCCF4F615</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tirehub_units" id="2F5B92E1-8A11-B7C1-EC6B-29B85C8C066E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 13:57:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tire Hub Units]]></commentInRDBMS>
+<generatorID>406D14BA-2304-008A-8409-04D54617E79D</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="secondary_units" id="D75E5074-0216-2FBD-E01A-D947E748B39E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 13:57:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Secondary Units]]></commentInRDBMS>
+<generatorID>5353720A-2D9E-FFC0-DF3E-29AE993A5908</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direct_units" id="AFC94559-AF6E-C2AE-0210-EB600F07CB0D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 13:57:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Direct Units]]></commentInRDBMS>
+<generatorID>BED4A351-8511-31FD-B2FE-1964C4031954</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_group_key" id="E44AAF90-C9B1-35E6-C46F-0F9ED7BD4745">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:12:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[The customer group this related to]]></commentInRDBMS>
+<generatorID>4A45E937-5DCF-2026-8A6C-403ED26D7E46</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F439533-B0BB-6B95-6BB5-FE6279BF3611" referredColumn="44393951-8CA9-AA49-EFB7-E591D7E6C634"/>
+</associations>
+</Column>
+<Column name="activity_date_key" id="E887B3F3-01BE-A5B1-300E-0C5D9106A1B7">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:26:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[The activity date key ]]></commentInRDBMS>
+<generatorID>F5198BEB-F4B2-47C8-E4D0-FBADFA46B39D</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC514C8F-1B72-718D-EEF9-74896B0128E7" referredColumn="4299DD46-E26F-144D-481C-888628C4B086"/>
+</associations>
+</Column>
+<Column name="dma_key" id="447DB205-9584-EEE6-2BA5-706C7DF76908">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 12:07:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[The DMA Key]]></commentInRDBMS>
+<generatorID>948597FF-7F7B-D56D-8D39-C842AA3EEE6D</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADA8135B-FFF3-3F7D-8DEF-8944EE7E6D27" referredColumn="7F8D72D2-6A09-15C4-1E77-F1BDD0F1B270"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D36D3DE3-339D-ECA2-6961-B236801AF9C6" name="fact_market_share_dim_customer_group_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:12:50 UTC</createdTime>
+<generatorID>31FDD6C0-8A2E-4750-01FC-B8C619B5FDC3</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E44AAF90-C9B1-35E6-C46F-0F9ED7BD4745"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AEABEFC-8E05-F6A1-B6F0-98D2A210EAE1" name="fact_market_share_dim_date_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:26:14 UTC</createdTime>
+<generatorID>58FEABA5-D4D8-2234-8D9E-B2717DD7868B</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E887B3F3-01BE-A5B1-300E-0C5D9106A1B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A55BAE51-7AA5-2678-D1E5-81AD4B287F5B" name="fact_market_share_dim_dma_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 12:07:40 UTC</createdTime>
+<generatorID>DB4C22B7-60D0-CED1-67EC-06C9C61F19D9</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="447DB205-9584-EEE6-2BA5-706C7DF76908"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

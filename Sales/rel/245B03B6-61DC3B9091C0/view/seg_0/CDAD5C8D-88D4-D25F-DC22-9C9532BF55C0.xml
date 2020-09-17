@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="CDAD5C8D-88D4-D25F-DC22-9C9532BF55C0" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="vw_ship_to_salesrep">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:26:45 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<ordsAlias>view_10</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT CAST(emp_hier.[Ship to Key] AS INT) AS [Ship to Key],
+  CAST(IsNull(emp_hier.[ACCOUNT REP], 'NA') AS VARCHAR(50)) AS [ACCOUNT REP],
+  CAST(IsNull(emp_hier.[AREA MANAGER], 'NA') AS VARCHAR(50)) AS [AREA MANAGER],
+  CAST(IsNull(emp_hier.[REGION MANAGER], 'NA') AS VARCHAR(50)) AS
+  [REGION MANAGER]
+FROM (SELECT ds.Ship_To_Key AS [Ship to Key],
+    ds.ship_to_id,
+    ds.channel,
+    emp.Rep_Job_Title,
+    IsNull(emp.employee_key, -1) AS employee_key,
+    CASE
+      WHEN channel IN ('Program Tire Retailers', 'General Sales') THEN Rep_Name
+      WHEN channel = 'Car Dealer' THEN Rep_Name END AS [ACCOUNT REP],
+    CASE
+      WHEN channel IN ('Program Tire Retailers', 'General Sales') THEN Area_Name
+      WHEN channel = 'Car Dealer' THEN Rep_Name END AS [AREA MANAGER],
+    CASE
+      WHEN channel IN ('Program Tire Retailers', 'General Sales') THEN
+      Regional_Name WHEN channel = 'Car Dealer' THEN Area_Name
+    END AS [REGION MANAGER]
+  FROM (SELECT DISTINCT t.employee_key,
+      t.employee_name AS Rep_Name,
+      t.job_title AS Rep_Job_Title,
+      t.email_address AS Rep_Email,
+      t1.employee_name AS Area_Name,
+      t2.employee_name AS Regional_Name
+    FROM edw.dim_employee t
+      LEFT JOIN edw.dim_employee t1 ON t.employee_manager_number =
+        t1.employee_number
+      LEFT JOIN edw.dim_employee t2 ON t1.employee_manager_number =
+        t2.employee_number
+    WHERE t.job_title IN ('CRS', 'CDR')) emp
+    RIGHT JOIN edw.dim_ship_to ds ON emp.employee_key = ds.employee_key)
+  emp_hier]]></userDefinedSQL>
+<parsed>true</parsed>
+<syntaxProvider>MSSQL</syntaxProvider>
+<includeSchemaNameInQuery>true</includeSchemaNameInQuery>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Ship to Key]" id="2F29E3E5-C7EE-831E-66F8-F2B8957B624C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 18:18:38 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Ship to Key]</alias>
+<dataType>INT</dataType>
+<expression>Cast(emp_hier.[Ship to Key] As INT)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[ACCOUNT REP]" id="0E8CF6D8-C51E-D611-7E52-214A00D66665">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 18:18:38 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[ACCOUNT REP]</alias>
+<dataType>VARCHAR(50)</dataType>
+<expression>Cast(IsNull(emp_hier.[ACCOUNT REP], &apos;NA&apos;) As VARCHAR(50))</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[AREA MANAGER]" id="0B8D2568-3FBA-D2D1-C75D-F0F6EB44084B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 18:18:38 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[AREA MANAGER]</alias>
+<dataType>VARCHAR(50)</dataType>
+<expression>Cast(IsNull(emp_hier.[AREA MANAGER], &apos;NA&apos;) As VARCHAR(50))</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[REGION MANAGER]" id="4927C960-92F1-7EB2-9256-8F547A0B6180">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 18:18:38 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[REGION MANAGER]</alias>
+<dataType>VARCHAR(50)</dataType>
+<expression>Cast(IsNull(emp_hier.[REGION MANAGER], &apos;NA&apos;) As VARCHAR(50))</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9E0CE919-F96A-B2E7-EB73-3E700D809DFE">
+<container>true</container>
+<schema>edw</schema>
+<tableName>dim_employee</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C71B1F5D-FDBD-BCEB-A887-3C1CA034C27F">
+<columnName>employee_manager_number</columnName>
+<schema>edw</schema>
+<tableName>dim_employee</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="340020F8-9795-44DE-4902-593DE501D616">
+<columnName>employee_number</columnName>
+<schema>edw</schema>
+<tableName>dim_employee</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="802A6240-6A64-17FA-2BAE-870E97A50E3D" name="vw_ship_to_salesrep_PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:28:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="2F29E3E5-C7EE-831E-66F8-F2B8957B624C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E919540-9AA4-B518-E5ED-1B4ED55BE822" name="vw_ship_to_salesrep_vw_dim_ship_to_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:50:30 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+</ind_PK_UK>
+</indexes>
+</TableView>

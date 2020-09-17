@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5566F282-45DE-CC1E-FFBB-25738F664766" containerWithKeyObject="8BA5B582-C3C7-DBFB-14C2-CE09FD17D97D" localFKIndex="3D32D17D-2A8D-28EE-6900-EDDA46D51444" name="fact_audit_trail_dim_date_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<generatorID>D60EB502-688D-0C6D-7631-8C2DDF578844</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<referredTableLongName>edw.dim_date</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0C1BA57B-9A3D-106F-FBC9-5ECC06E4D348</referredTableID>
+<keyObject>59EF5B23-FC07-EA7F-7ABF-4E73D0B6ED96</keyObject>
+<referredKeyID>59EF5B23-FC07-EA7F-7ABF-4E73D0B6ED96</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>date_key</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

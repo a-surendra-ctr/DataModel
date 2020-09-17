@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fact fill rate dim location fk" directorySegmentName="seg_0" id="BFDECE19-60B9-2F9B-FDEB-C36CE4F2A09B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 08:09:09 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<sourcePk>50DB127A-B11D-4CA4-17D5-6B9D3D6A2448</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6CDD5EE3-4734-C002-695B-639672CB1F7A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1C1C566A-27CB-20BF-0922-D50A599A1C19</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

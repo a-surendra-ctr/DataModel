@@ -1,0 +1,550 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="08B63843-CA79-A6C1-C47B-DE240F3B3DDC" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="vw_dim_product">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<ordsAlias>v_dim_product</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT edw.dim_product.product_key AS [Product Key],
+  edw.dim_product.product_id AS [Product id],
+  edw.dim_product.item_id AS [Item id],
+  edw.dim_product.item_desc AS Item,
+  edw.dim_product.delete_flag AS [Delete Flag],
+  edw.dim_product.inactive AS Inactive,
+  edw.dim_product.forecast_group AS [Forecast Group],
+  edw.dim_product.brand_code AS [Brand Code],
+  edw.dim_product.brand_group_id AS [Brand Group Class id],
+  edw.dim_product.brand_group AS [Brand Group],
+  edw.dim_product.model_id AS [Model Class id],
+  edw.dim_product.model AS Model,
+  edw.dim_product.classification_id AS [Classification Class id],
+  edw.dim_product.brand AS Brand,
+  edw.dim_product.best_for_customer_price AS [Best for Customer Price],
+  edw.dim_product.go_to_market_price AS [Go to Market Price],
+  edw.dim_product.low_volume_customer_price AS [Low Volume Customer Price],
+  edw.dim_product.ecommerce_price AS [Ecommerce Price],
+  edw.dim_product.carmax_price AS [Carmax Price],
+  edw.dim_product.retail_customer_price AS [Retail Customer Price],
+  edw.dim_product.net_acquisition_cost_price AS [Net Acquisition Cost Price],
+  edw.dim_product.speed_rating AS [Speed Rating],
+  edw.dim_product.load_range AS [Load Range],
+  edw.dim_product.type AS Type,
+  edw.dim_product.section_width AS [Section Width],
+  edw.dim_product.aspect_ratio AS [Aspect Ratio],
+  edw.dim_product.utqg_wear AS [UTQG Wear],
+  edw.dim_product.utqg_traction AS [UTQH Traction],
+  edw.dim_product.utqg_tem AS [UTQG Tem],
+  edw.dim_product.country AS Country,
+  edw.dim_product.run_flat AS [Run Flat],
+  edw.dim_product.rim_diameter AS [Rim Diameter],
+  edw.dim_product.utqg AS UTQG,
+  edw.dim_product.full_size AS [Full Size],
+  edw.dim_product.application AS Application,
+  edw.dim_product.sales_tier AS [Sales Tier],
+  edw.dim_product.default_product_group AS [Product Group],
+  edw.dim_product.season_type AS [Season Type]
+FROM edw.dim_product]]></userDefinedSQL>
+<parsed>true</parsed>
+<syntaxProvider>MSSQL</syntaxProvider>
+<originalTableID>ED903C15-8BC2-33FE-D3C4-9ABEB3FBFDE0</originalTableID>
+<includeSchemaNameInQuery>true</includeSchemaNameInQuery>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Product Key]" id="7AD0AE05-87E8-268F-3133-846990492EAC">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[product key]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Product Key]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_product.product_key</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Product id]" id="BCC91AFB-FF00-D5B6-A1D9-72A4868A881E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique item identifier.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Product id]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_product.product_id</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Item id]" id="0F87D2D7-E832-D9ED-9F3D-8984A15FEF30">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique item ID.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Item id]</alias>
+<dataType>VARCHAR (30)</dataType>
+<expression>edw.dim_product.item_id</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Item" id="02550011-29AB-C3CD-69EB-6236FB72FCAE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Item description.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Item</alias>
+<dataType>VARCHAR (200)</dataType>
+<expression>edw.dim_product.item_desc</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Delete Flag]" id="5C6CAEF1-7AB6-05A3-E65C-935547807F2A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Record flagged as delete (exclude from reports).
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Delete Flag]</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_product.delete_flag</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Inactive" id="E4A2ABEE-DC8F-AE81-3F5A-534CB38C1457">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Item inactive flag (Yes/No)
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Inactive</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_product.inactive</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Forecast Group]" id="BF19D471-64E1-F9DB-5B5A-604403E3A23F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[User defined to hold forcast group values. Example: Commuter/Touring, Winter, All Terrian, Performance, Commercial; used in ToolsGroup application.]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Forecast Group]</alias>
+<dataType>VARCHAR (16)</dataType>
+<expression>edw.dim_product.forecast_group</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Brand Code]" id="991DA829-AFE0-FB31-1575-E8606BC11DFA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifies brand code.]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Brand Code]</alias>
+<dataType>VARCHAR (2)</dataType>
+<expression>edw.dim_product.brand_code</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Brand Group Class id]" id="2FEB75FC-04B7-D463-0F6C-C89C4153980F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[class_1id.]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Brand Group Class id]</alias>
+<dataType>VARCHAR (8)</dataType>
+<expression>edw.dim_product.brand_group_id</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Brand Group]" id="9BBA9842-C238-7F4D-6DC2-F493F7F50761">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tier description; Brand Group]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Brand Group]</alias>
+<dataType>VARCHAR (30)</dataType>
+<expression>edw.dim_product.brand_group</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Model Class id]" id="8999B258-9AE3-3ED4-777C-F8C761B39A30">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[class_2id
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Model Class id]</alias>
+<dataType>VARCHAR (8)</dataType>
+<expression>edw.dim_product.model_id</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Model" id="263D9564-22C3-1457-46FB-3F903F0E90BA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicates the pattern code of an item. Provided by supplier. Pattern description field has extended/full information.]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Model</alias>
+<dataType>VARCHAR (30)</dataType>
+<expression>edw.dim_product.model</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Classification Class id]" id="094583C3-1495-FC1D-2D03-0A110D377663">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class_id3]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Classification Class id]</alias>
+<dataType>VARCHAR (8)</dataType>
+<expression>edw.dim_product.classification_id</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Brand" id="C439695C-EC55-0528-0F1D-C7E8C7766CA9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class4_id description :USTMA coding description]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Brand</alias>
+<dataType>VARCHAR (30)</dataType>
+<expression>edw.dim_product.brand</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Best for Customer Price]" id="BF887C5D-71B6-DFB3-2423-C3497C20F855">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Pricing - Best for Customer
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Best for Customer Price]</alias>
+<dataType>DECIMAL (11,2)</dataType>
+<expression>edw.dim_product.best_for_customer_price</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Go to Market Price]" id="DC03C13F-6E3F-A1C5-0971-0B0356D47161">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Pricing - Go To Market
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Go to Market Price]</alias>
+<dataType>DECIMAL (11,2)</dataType>
+<expression>edw.dim_product.go_to_market_price</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Low Volume Customer Price]" id="4FA8F46C-F471-2F81-99D3-079513523220">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Pricing - Low Volume Customers
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Low Volume Customer Price]</alias>
+<dataType>DECIMAL (11,2)</dataType>
+<expression>edw.dim_product.low_volume_customer_price</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Ecommerce Price]" id="EAF7A70A-C998-9315-4531-75725DEB4BA5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ecommerce 
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Ecommerce Price]</alias>
+<dataType>DECIMAL (11,2)</dataType>
+<expression>edw.dim_product.ecommerce_price</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Carmax Price]" id="021465CC-7A1D-4683-632C-5951C6A91E77">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[CarMax
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Carmax Price]</alias>
+<dataType>DECIMAL (11,2)</dataType>
+<expression>edw.dim_product.carmax_price</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Retail Customer Price]" id="F264DF7A-FA21-DFDD-2897-B39776D7616A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Retail Customers
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Retail Customer Price]</alias>
+<dataType>DECIMAL (11,2)</dataType>
+<expression>edw.dim_product.retail_customer_price</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Net Acquisition Cost Price]" id="85732A39-1E25-061E-54F2-3E8A78F93F1D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Net Acquisition Cost
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Net Acquisition Cost Price]</alias>
+<dataType>DECIMAL (11,2)</dataType>
+<expression>edw.dim_product.net_acquisition_cost_price</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Speed Rating]" id="782D03CA-EB2F-8A9C-9870-DD8ED500C2AF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Alphabetic value that matches to the maximum MPH the tire is capable of reaching without damage to the tire.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Speed Rating]</alias>
+<dataType>VARCHAR (2)</dataType>
+<expression>edw.dim_product.speed_rating</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Load Range]" id="61D97187-A800-B0F5-70C8-3E63BF4156B6">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Alphabetic ply rating of the tire.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Load Range]</alias>
+<dataType>VARCHAR (4)</dataType>
+<expression>edw.dim_product.load_range</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Type" id="FA45FB35-82FF-D738-1E4A-276BC4444EC3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Custom field used for Tools Group to identify item type.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Type</alias>
+<dataType>VARCHAR (3)</dataType>
+<expression>edw.dim_product.type</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Section Width]" id="852296C9-C4E0-770E-178C-1DEBB8DA2B90">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[3 digit numerical portion of the tire size that identifies the cross section of a tire in millimeters.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Section Width]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_product.section_width</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Aspect Ratio]" id="7ED60E19-4336-0C22-B2D0-A4DD7FBDDA65">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Percentage ratio of the tire's sidewall height from rim to tread of the section width of the tire.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Aspect Ratio]</alias>
+<dataType>DECIMAL (5,2)</dataType>
+<expression>edw.dim_product.aspect_ratio</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[UTQG Wear]" id="DAB01974-DAD0-59D6-0BBD-264961CC5331">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numerical value of the UTQG (Uniform Tire Quality Grading) rating.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[UTQG Wear]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_product.utqg_wear</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[UTQH Traction]" id="0FD0BB43-6231-CF71-7A85-AFDEBC346F42">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Alphabetic value of the traction portion of the UTQG (Uniform Tire Quality Grading) rating.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[UTQH Traction]</alias>
+<dataType>VARCHAR (2)</dataType>
+<expression>edw.dim_product.utqg_traction</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[UTQG Tem]" id="CDA1D01C-0E6E-CF63-4373-D8DEE6A26253">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Alphabetic value of the temperature portion of the UTQG (Uniform Tire Quality Grading) rating.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[UTQG Tem]</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_product.utqg_tem</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Country" id="C353F189-0E27-C373-C6CD-8118E80B6045">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country of manufacture.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Country</alias>
+<dataType>VARCHAR (25)</dataType>
+<expression>edw.dim_product.country</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Run Flat]" id="15348721-A406-1942-B9E2-CFC3E1D4E6E4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flag to identify tires which can operate upto 50miles at 50mph at 0 (zero) psi.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Run Flat]</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_product.run_flat</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Rim Diameter]" id="A7C863D7-46E1-E249-CAAF-DD123CA9F18F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tire diameter measured in inches.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Rim Diameter]</alias>
+<dataType>DECIMAL (6,2)</dataType>
+<expression>edw.dim_product.rim_diameter</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="UTQG" id="1EF00E79-5B23-06F5-B032-FECE8B49CE07">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Uniform Tire Quality Grading rating.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>UTQG</alias>
+<dataType>VARCHAR (15)</dataType>
+<expression>edw.dim_product.utqg</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Full Size]" id="F52D6656-3E1C-EBE6-0CB0-BB2DC678823A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Complete tire size as described by the manufacturer.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Full Size]</alias>
+<dataType>VARCHAR (20)</dataType>
+<expression>edw.dim_product.full_size</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Application" id="995B028A-DF35-283A-2A91-2F5911067C3B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifies whether a tire is consumer, commercial or industrial.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Application</alias>
+<dataType>VARCHAR (40)</dataType>
+<expression>edw.dim_product.application</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Sales Tier]" id="73AAF912-667A-9066-5B74-2C277FD3BC5D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Same as class1_id also knowns as brand_group_id  (currently unused).
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Sales Tier]</alias>
+<dataType>VARCHAR (40)</dataType>
+<expression>edw.dim_product.sales_tier</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Product Group]" id="132291ED-B822-2E4F-1C8A-7FB0A576303F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Indicates if an item is Tire or non-tire
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Product Group]</alias>
+<dataType>VARCHAR (8)</dataType>
+<expression>edw.dim_product.default_product_group</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Season Type]" id="586297AC-A452-793A-8EC4-C72431EA7A02">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Season type associated with the tire
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Season Type]</alias>
+<dataType>VARCHAR (40)</dataType>
+<expression>edw.dim_product.season_type</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="FB195257-4322-2B5F-1402-359CE290FCE1" name="vw_dim_product_PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:53:28 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="7AD0AE05-87E8-268F-3133-846990492EAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

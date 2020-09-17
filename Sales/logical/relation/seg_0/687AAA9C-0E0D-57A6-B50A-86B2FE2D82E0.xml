@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fact_po_fact_inventory_receipts_fk" directorySegmentName="seg_0" id="687AAA9C-0E0D-57A6-B50A-86B2FE2D82E0">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-03 19:32:03 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<sourcePk>8B9B65E6-A7BB-4D57-43C8-2AC47CCE8A42</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8349D906-2731-0369-D5E2-6789C6F4A852</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3F68C52D-03FF-E4BD-C865-356B9900CA93</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

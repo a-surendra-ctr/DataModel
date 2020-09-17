@@ -1,0 +1,362 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF841981-9FDA-991A-7E12-0875F19F6A2B" name="fact_transfer_invoice">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:19:48 UTC</createdTime>
+<generatorID>81FFAE38-E1E0-7EE8-36DF-47274F00C10A</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="invoice no" id="ACAF413F-45A0-E069-2D39-920C2DCA8093">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:19:48 UTC</createdTime>
+<generatorID>423FD949-7CAD-FA47-1BAA-D598B86D17E3</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="product_key" id="59825305-998E-6679-7CA5-A17B4F14B554">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:23:09 UTC</createdTime>
+<generatorID>4632E9A0-B808-4490-2789-42A68DAB6259</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>C90418DE-A903-21DD-29DE-D58BC95A9186</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>product key</preferredAbbreviation>
+</Attribute>
+<Attribute name="po no" id="34BD9F88-E8D1-1E16-C980-689FC7CA86BA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:19:48 UTC</createdTime>
+<generatorID>84A04A23-8176-1B8B-0C56-2F687AB45421</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="company id" id="C0A0890C-DBFD-F805-AEB2-1426FABA607A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:19:48 UTC</createdTime>
+<generatorID>65017639-8FD9-5108-A241-275AAF0A5346</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="supplier_id" id="2A762A8B-7244-CD51-F7EC-A86CCB5DA534">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:19:48 UTC</createdTime>
+<generatorID>00E07216-4E39-DFE4-4C09-FC8C2D6E9059</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vendor id" id="94E8CCA4-EEA0-B1D0-8BE7-D7F4E48B2670">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:19:48 UTC</createdTime>
+<generatorID>00791F74-683D-6568-AA55-7B3624FC1DB7</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="order no" id="4A7ACC58-1BF0-3098-ED01-15707A1E391E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:19:48 UTC</createdTime>
+<generatorID>7D8ABAFC-7995-DC43-EA22-851ECC080099</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cogs amount actual" id="FDB6E1C1-9CDE-23E5-E792-AC9F6C8FBDE1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:19:48 UTC</createdTime>
+<generatorID>816D015D-1038-5CA5-F73A-5F976124B63B</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>774C3EE3-BEE5-062A-50B6-DCA414A100BF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cogs amount refund" id="EBE40BF2-67BA-D087-2F34-5F1C0BBE4993">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:19:48 UTC</createdTime>
+<generatorID>32BFF8D7-1CD6-E44C-360A-9D570BF55862</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>774C3EE3-BEE5-062A-50B6-DCA414A100BF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sales_tax_amount" id="07E3A4F0-4147-6CB7-3B07-2C203EA33E88">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 11:08:29 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>774C3EE3-BEE5-062A-50B6-DCA414A100BF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="invoice amount" id="B9065FAB-C52F-9B8A-B8AF-1EE79F184A09">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:19:48 UTC</createdTime>
+<generatorID>67B4AEFC-CC70-414E-328A-B5037C2D6197</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>774C3EE3-BEE5-062A-50B6-DCA414A100BF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_amount_billed" id="2357BB33-0C49-8D6A-EE1F-30DFB585A326">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 11:12:48 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>774C3EE3-BEE5-062A-50B6-DCA414A100BF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="extended price" id="0A45E3A3-952E-344A-9667-3338ACA90BDF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:19:48 UTC</createdTime>
+<generatorID>D216B25E-8DA1-B101-84DF-153B484E2971</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantity" id="524A950F-0010-1499-854E-5E013C8401C1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 11:09:54 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>AAD7064C-F26A-835A-281E-2443F18047FE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="terms_discount_pct" id="5F22BE3A-2AD9-B677-7450-1CE0FBFBA3C4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 11:16:00 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>3D840F86-5C43-425B-D560-30D511A234F8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qty_shipped_br" id="D5A0C423-6278-6A4B-9478-35FE68A6C3A4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 11:10:07 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>AAD7064C-F26A-835A-281E-2443F18047FE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unit_cost_invoiced_commission" id="4030CE7A-CD20-4F87-C7D4-05DA4E1EC587">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 11:11:00 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unit price" id="98BB1741-B39B-D615-EF9C-DFE0B83F42B2">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:19:48 UTC</createdTime>
+<generatorID>3C2F2C61-6E3A-F6B5-825A-16CE8CFB8941</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="invoice_date_key" id="52726460-4345-FE81-9539-A76245783998">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:41:55 UTC</createdTime>
+<generatorID>3861AD31-45A7-17AE-79C6-60B64FCDC4F4</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>7AD34AEB-4BD6-9557-E4A7-42BDD03D36E9</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>date_key</preferredAbbreviation>
+</Attribute>
+<Attribute name="customer_key" id="414A89DA-CF2D-AF2D-B591-1AFA38BDB6C6">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:44:56 UTC</createdTime>
+<generatorID>11612DE1-B12E-0227-9FA5-924F007F75D2</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>EBB8A962-720B-5870-FD3D-E4079914B865</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_to_key" id="D299080C-2E52-3687-1A34-32FF3E42F195">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:48:39 UTC</createdTime>
+<generatorID>ABC3A288-50D4-9380-1897-5A61C33DE4D2</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>D2B848A2-2C2E-1853-E591-1F0FBCA2A145</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sales_location_key" id="97B4103C-7976-7531-C776-822695DA0024">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:59:24 UTC</createdTime>
+<generatorID>A197A984-0F97-FD55-2516-952D5CD7BA8C</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>0BA4668F-A804-EA30-DBB5-C5D918CD2495</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_location_key" id="21369B5E-CB34-B11C-654B-0D693AD37267">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-26 17:59:29 UTC</createdTime>
+<generatorID>C9520923-008E-18E4-DDB4-0D3AC9B3CAD5</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>0BA4668F-A804-EA30-DBB5-C5D918CD2495</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="582AA1F0-335C-5971-C4D5-9344CD65AB28" name="fact_transfer_invoice PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 11:17:29 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>4632E9A0-B808-4490-2789-42A68DAB6259,ACAF413F-45A0-E069-2D39-920C2DCA8093,4632E9A0-B808-4490-2789-42A68DAB6259</newElementsIDs>
+<usedAttributes>
+<attributeRef>59825305-998E-6679-7CA5-A17B4F14B554</attributeRef>
+<attributeRef>ACAF413F-45A0-E069-2D39-920C2DCA8093</attributeRef>
+<attributeRef>59825305-998E-6679-7CA5-A17B4F14B554</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

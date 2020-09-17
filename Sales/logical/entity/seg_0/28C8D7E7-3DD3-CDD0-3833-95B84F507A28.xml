@@ -1,0 +1,573 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="28C8D7E7-3DD3-CDD0-3833-95B84F507A28" name="fact invoice">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:07:25 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="invoice_no" id="5ADCE64A-5FF1-A1ED-1607-8AF0BD45B994">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 07:39:22 UTC</createdTime>
+<generatorID>C35D7911-82BA-EF1D-9785-29A4B76131EE</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>B1EEA9C5-2269-67B4-7592-D6013ECF4A79</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="product key" id="5E29FF5F-031A-E7A5-BE89-CAB179B5C773">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-03 10:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Product Key]]></commentInRDBMS>
+<generatorID>07540998-E50D-FF02-A453-210A8893400C</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>C90418DE-A903-21DD-29DE-D58BC95A9186</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="invoice date key" id="BB696694-14AA-9C37-B1DF-AB351076BA14">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-03 10:16:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Invoice Date Key (edw.dim_date.date_key)]]></commentInRDBMS>
+<generatorID>2DE7B4CC-C781-9C04-685D-C24B639A8103</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>7AD34AEB-4BD6-9557-E4A7-42BDD03D36E9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bill to customer key" id="D2F90874-C7E4-A584-4FDD-EF7390C0DB4C">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-03 10:25:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Bill To Customer Key]]></commentInRDBMS>
+<generatorID>1991038A-225F-B24C-C2B4-97B031759718</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>EBB8A962-720B-5870-FD3D-E4079914B865</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sold to customer key" id="E25DC377-A991-BAB8-6A27-8F1AA410D06E">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-03 10:25:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Sold To Customer Key]]></commentInRDBMS>
+<generatorID>66926392-176B-1448-832D-A677CF7593D5</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>EBB8A962-720B-5870-FD3D-E4079914B865</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="location key" id="9271080C-36FE-069D-7768-92C907F498A0">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-03 10:26:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Location Key]]></commentInRDBMS>
+<generatorID>92ABD38E-6EFD-EBFD-D256-C7C515C45E7E</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>0BA4668F-A804-EA30-DBB5-C5D918CD2495</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship to key" id="1293030E-54FE-0537-E0A0-DC139C8E9AE5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-05 15:00:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Ship To Key]]></commentInRDBMS>
+<generatorID>F1666E3E-713E-3AC8-8D66-28B54A6B3AE7</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>D2B848A2-2C2E-1853-E591-1F0FBCA2A145</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="company no" id="D776ABEA-BF7F-E91D-FE89-1E37A1F6A667">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:09:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique code that identifies a company.]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="po no" id="781AAEE6-B9CA-58E7-75EA-09D51753C47E">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:13:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Purchase order number]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="order no" id="A5C7D325-A736-4BC1-DC34-BC0B319D8FA9">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:14:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Order number]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salesrep id" id="1CD20B7B-A261-1E8F-6933-5549CF5A5523">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:14:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sales Rep ID]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="revenue amount" id="FE149C85-5AD9-A158-10EB-7D198AB640BF">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:14:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[This stores extended price amount from line item]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>774C3EE3-BEE5-062A-50B6-DCA414A100BF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cogs amount" id="4D4BE4EC-C14A-A22B-C22E-3CDC9CB0DFDA">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:15:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[This stores COGS amount from line item]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>774C3EE3-BEE5-062A-50B6-DCA414A100BF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sales tax amount" id="4851B1BE-824F-B0DE-8080-0A2F705675FD">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:15:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[This stores extended price amount from line item]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>774C3EE3-BEE5-062A-50B6-DCA414A100BF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qty shipped" id="A40D4106-6E48-C2B2-E595-34E3E5D86E8B">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:15:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantity field for all AR Invoices]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>5CB1BFA2-67AA-C28A-F356-7E0BF4BC4C40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qty shipped actual" id="42108D2C-D9C5-EEF1-6A6C-7969A41F7F76">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:15:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[The actual quantity that was shipped]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>5CB1BFA2-67AA-C28A-F356-7E0BF4BC4C40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date last modified hdr" id="D57B3EEB-8D57-68E3-3C94-D706D8A9B1F4">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:15:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicates the date/time this header record was last modified]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7DC04A03-2557-6BF8-CD8F-E683E102AB88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date last modified line" id="EAA4D7C5-7278-8620-6844-F55133AD8534">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:15:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicates the date/time this line item record was last modified]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7DC04A03-2557-6BF8-CD8F-E683E102AB88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qty ordered" id="201C3A5F-619E-A99F-697E-87C488D58A89">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:16:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantity that was ordered]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>5CB1BFA2-67AA-C28A-F356-7E0BF4BC4C40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qty invoiced" id="2F203DCA-3F2C-1D56-5196-F71148C2CE55">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:16:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantity that was invoiced]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>5CB1BFA2-67AA-C28A-F356-7E0BF4BC4C40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unit price" id="3F390D2B-BDA0-0AC9-964D-CCF40C501FEE">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:16:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unti price for the item]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unit cost" id="382801A6-497F-F888-1D07-31869C5BE68B">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:17:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unit cost for the item]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sale transfer" id="3055C313-0BD7-30BC-B042-82F43D629F44">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:17:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Whether this is a SALE or a TRANSFER]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="margin per item" id="F0CDF491-894B-890E-49F8-2BBB17BB6002">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-02 04:17:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[What is the margin per item ?]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>774C3EE3-BEE5-062A-50B6-DCA414A100BF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rma flag" id="FA5A8909-D500-3872-A748-1F6B1FAC6E54">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-19 17:54:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[RMA Flag from related Order(Y/N)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="invoice desc" id="AF572E87-4F3A-87CF-7DD9-08FCD5E53DCD">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-19 17:55:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[The description for the Invoice ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="source type cd" id="9E8FFAB6-B474-E4C0-C335-DC681393F0AA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-19 17:56:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifies the source how this invoice record was created]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="source type cd desc" id="E81CFC65-E617-EF4D-3D63-9B9FFE50C3A1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-19 17:56:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Stores source type code description]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="record type cd" id="59197704-A56C-530B-0C10-E1D4270736C5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-19 17:56:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Determines the type of record]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="record type cd desc" id="4F18F89B-A96D-BA11-2EDD-20EFB66D1194">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-19 17:56:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Stores record type code description]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="freight code uid" id="E28F0CE5-32DE-8B22-C91D-FB3135F30D2D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-19 17:57:14 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="order source" id="FF01C923-6B8E-0723-B801-2EA334769908">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-19 17:57:30 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5D181C09-03DD-3812-7AC7-B348D1F685BC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pass through credit flag" id="0532DE6F-E239-DE32-359A-F4C49E02F42C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-19 17:57:45 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="invoice adjustment type" id="C5636E3F-741C-6846-5747-4FF3C8A23242">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-19 17:57:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicates invoice method type (Credit/Debit/Invoice/Prepayment/Correction)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="distance shipped" id="8A798FB6-A073-06CB-8EEA-1874EF04FF00">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-19 17:58:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>9</dataTypeScale>
+<ownDataTypeParameters>,19,9</ownDataTypeParameters>
+</Attribute>
+<Attribute name="supplier_inventory_price" id="6A3CB4F0-9A9F-E236-43E9-335354A5065F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-19 17:58:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Supplier Inventory cost ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="00CB79A8-8213-AEA1-30E0-664857D75C92" name="fact_invoice_pk">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 07:28:18 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>07540998-E50D-FF02-A453-210A8893400C,C35D7911-82BA-EF1D-9785-29A4B76131EE</newElementsIDs>
+<usedAttributes>
+<attributeRef>5E29FF5F-031A-E7A5-BE89-CAB179B5C773</attributeRef>
+<attributeRef>5ADCE64A-5FF1-A1ED-1607-8AF0BD45B994</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

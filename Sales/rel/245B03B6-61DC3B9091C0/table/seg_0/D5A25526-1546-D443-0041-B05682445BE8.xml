@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5A25526-1546-D443-0041-B05682445BE8" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="dim_channel_invoice">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:18:09 UTC</createdTime>
+<generatorID>D90D8ADF-8023-4102-8D5E-72F11C43D49B</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="invoice_no" id="BC5918DF-4190-7DFD-933B-FC60BFDEDE90">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:18:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[The invoice no ]]></commentInRDBMS>
+<generatorID>B1EEA9C5-2269-67B4-7592-D6013ECF4A79</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ship_to_key" id="26B1543E-5194-0349-4309-F82409879F16">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 15:01:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Ship To Key ]]></commentInRDBMS>
+<generatorID>3FEE6526-6AEB-572C-639A-8FB46F28749E</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B85E26AE-9973-A87C-A8AC-58F44923E662" referredColumn="B3C9A86D-7762-400A-3506-DED1A9AAA6D7"/>
+</associations>
+</Column>
+<Column name="channel" id="13EE7D2A-A9FF-7101-C59E-29DC6EBE4F51">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:18:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Channel]]></commentInRDBMS>
+<generatorID>A125A3D7-97E5-BC44-CB98-E50ECCF2A30A</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="segment" id="9B4F02C5-ED9D-9A0E-7FC1-588990B83717">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:18:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Segment]]></commentInRDBMS>
+<generatorID>6BD18369-235F-8D07-E239-65B3244E4B6D</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Invoice_date" id="79FC0D7D-691A-20F1-3558-DE7DDC4FF898">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 15:01:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Iinvoice date ]]></commentInRDBMS>
+<generatorID>7F8849E7-56BD-75BC-075D-9A5415DFB997</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="keyaccount" id="6553F61C-F42C-FDD9-DF0D-EAEA6337EE3E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-28 16:09:14 UTC</createdTime>
+<generatorID>171255AA-C13F-B384-6480-0E20378F5135</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="66AE7DAE-FF54-993D-948D-0E3DD8C3559F" name="dim_channel_invoice_PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 07:44:47 UTC</createdTime>
+<generatorID>FED80015-333D-FB6D-BECA-E7E8081D7F31</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC5918DF-4190-7DFD-933B-FC60BFDEDE90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="190E2108-2239-399F-F33D-8D81C6E7B010" name="dim_channel_invoice__IDX">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:18:09 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>AA5A00B3-F4E1-3BB6-17FF-30B6F96585B0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="BC5918DF-4190-7DFD-933B-FC60BFDEDE90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="782B2487-CB54-C47E-1812-6F37AA8978F8" name="dim_channel_invoice_dim_ship_to_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 15:01:28 UTC</createdTime>
+<generatorID>15CC4A22-EAA3-C484-FF9E-A0C2BC1C7890</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26B1543E-5194-0349-4309-F82409879F16"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4B6934B2-3D92-F6FE-2FBC-532E77DE6044" containerWithKeyObject="8BA5B582-C3C7-DBFB-14C2-CE09FD17D97D" localFKIndex="2A94C9F1-A6BF-7AB6-AB72-415BEB8A3B40" name="fact_audit_trail_dim_user_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:04:03 UTC</createdTime>
+<generatorID>841285A3-F93A-2ACA-7465-DB92A805B7A0</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<referredTableLongName>edw.dim_user</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3C9CB6E7-25E2-EDAC-E377-31D5DF9F3FE4</referredTableID>
+<keyObject>8711F948-EBD1-4F3B-E12B-091C6FF03B43</keyObject>
+<referredKeyID>8711F948-EBD1-4F3B-E12B-091C6FF03B43</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>user_key</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

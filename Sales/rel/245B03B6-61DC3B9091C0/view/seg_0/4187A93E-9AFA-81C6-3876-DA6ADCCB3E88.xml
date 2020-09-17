@@ -1,0 +1,523 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="4187A93E-9AFA-81C6-3876-DA6ADCCB3E88" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="vw_fact_fill_rate">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<ordsAlias>v_fact_fill_rate</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT fr.source AS Source,
+  fr.dealer_code AS [Dealer Code],
+  fr.product_key AS [Product Key],
+  CAST(fr.purchase_class AS CHAR(1)) AS [Purchase Class],
+  CAST(fr.item_status AS CHAR(1)) AS [Item Status],
+  CAST(fr.discontinued AS CHAR(1)) AS Disconinued,
+  fr.inv_min AS [Inv Min],
+  fr.inv_max AS [Inv Max],
+  fr.safety_stock AS [Safety Stock],
+  CAST(fr.qty_on_hand AS INT) AS [Qty On Hand],
+  CAST(fr.qty_available AS INT) AS [Qty Available],
+  CAST(fr.qty_on_po AS INT) AS [Qty On Po],
+  fr.total_requested AS [Total Requested],
+  fr.total_filled AS [Total Filled],
+  CAST((fr.total_requested - fr.total_filled) AS INT) AS Missed,
+  CAST(fr.fill_rate AS DECIMAL(4,2)) AS [Fill Rate],
+  fr.order_date_key AS [Order Date Key],
+  fr.process_date_key AS [Process Date Key],
+  fr.est_delivery_date_key AS [Estd Delivery Date Key],
+  CAST(fr.qty_incoming AS INT) AS [Qty Incoming],
+  fr.days_to_deliver AS [Days To Deliver],
+  fr.status AS Status,
+  CAST(inner_tbl.summary_status AS VARCHAR(50)) AS [Summary Status]
+FROM edw.fact_fill_rate fr
+  INNER JOIN (SELECT ffr1.product_key,
+    ffr1.location_key,
+    ffr1.est_delivery_date_key,
+    ffr1.process_date_key,
+    ffr1.order_date_key
+  FROM edw.fact_fill_rate ffr1
+  GROUP BY ffr1.product_key,
+    ffr1.location_key,
+    ffr1.est_delivery_date_key,
+    ffr1.process_date_key,
+    ffr1.order_date_key,
+    ffr1.purchase_class,
+    ffr1.core,
+    ffr1.item_status,
+    ffr1.classification_id,
+    ffr1.days_to_deliver,
+    ffr1.discontinued) inner_tbl ON inner_tbl.process_date_key =
+    fr.process_date_key AND inner_tbl.location_key = fr.location_key AND
+    inner_tbl.product_key = fr.product_key]]></userDefinedSQL>
+<parsed>true</parsed>
+<syntaxProvider>MSSQL</syntaxProvider>
+<originalTableID>50FC10B5-D621-7435-8E12-EA91DA742913</originalTableID>
+<includeSchemaNameInQuery>true</includeSchemaNameInQuery>
+<usedContainers>
+<container alias="fr" containerID="50FC10B5-D621-7435-8E12-EA91DA742913"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Source" id="14DDD9B6-17B1-CB22-C632-59C38403F169">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Source</alias>
+<dataType>VARCHAR (10)</dataType>
+<reference>false</reference>
+<referencedColumn>504CC86A-A9F7-B858-9C05-D7AFB8E04E24</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Dealer Code]" id="50C09DD5-6653-C8E3-D0F2-C398CCD0C0C5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Dealer Code]</alias>
+<dataType>VARCHAR (50)</dataType>
+<reference>false</reference>
+<referencedColumn>245E2952-F5E0-0052-1BA2-71A31393EBB6</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Product Key]" id="C05CE7CA-1BA1-D9FA-308E-FC6E67BDF4D2">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Product Key]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>474ECA3F-63D7-E572-2DF5-6562A5455F23</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+<associations>
+<colAssociation fkAssociation="434F9C3A-B5E6-6A52-FAF1-DFA65C1942E6" referredColumn="7AD0AE05-87E8-268F-3133-846990492EAC"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Purchase Class]" id="B6762C5B-7F60-9616-8D7D-8F00DEF887BA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:23:34 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Purchase Class]</alias>
+<dataType>CHAR(1)</dataType>
+<expression>Cast(fr.purchase_class As CHAR(1))</expression>
+<reference>false</reference>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+<tableAlias>fr</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Item Status]" id="6A4BFA1C-0D23-CC13-05A4-56597EA5EDFB">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:23:34 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Item Status]</alias>
+<dataType>CHAR(1)</dataType>
+<expression>Cast(fr.item_status As CHAR(1))</expression>
+<reference>false</reference>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+<tableAlias>fr</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Disconinued" id="9013D07F-3FC8-A01E-50A2-312190BAA5A6">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Disconinued</alias>
+<dataType>VARCHAR (1)</dataType>
+<expression>Cast(fr.discontinued As CHAR(1))</expression>
+<reference>false</reference>
+<referencedColumn>AECD7AFF-2B10-F3CC-16A4-3658241458D0</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Inv Min]" id="A71A48BC-5F24-9E9E-B76F-E7890ABD3C07">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Inv Min]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>220E2BA2-2836-379C-30FD-2CEB2CB0461A</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Inv Max]" id="0E44DFBC-3E75-CFA4-1EE1-A33C215FAD59">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Inv Max]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>3D48ACA3-2C84-1C6B-97DE-C2F4CDB34D41</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Safety Stock]" id="667DBF1F-85E1-870B-C32E-2BAA9CD41ABA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Safety Stock]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>B2B9437F-E985-41D3-45EF-135FFE81A9F8</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Qty On Hand]" id="B42CB377-8D4C-AFF5-A435-DAA026BFC017">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Qty On Hand]</alias>
+<dataType>INTEGER</dataType>
+<expression>Cast(fr.qty_on_hand As INT)</expression>
+<reference>false</reference>
+<referencedColumn>7A49882E-0019-C9E8-B7AC-747F8943EE5C</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Qty Available]" id="1BE8A9B1-7546-F130-450E-41DBC6979E03">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:23:34 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Qty Available]</alias>
+<dataType>INT</dataType>
+<expression>Cast(fr.qty_available As INT)</expression>
+<reference>false</reference>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+<tableAlias>fr</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Qty On Po]" id="A5742627-7579-5345-43A9-E893E1D1A0DF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:23:34 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Qty On Po]</alias>
+<dataType>INT</dataType>
+<expression>Cast(fr.qty_on_po As INT)</expression>
+<reference>false</reference>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+<tableAlias>fr</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Total Requested]" id="5190B9AA-4D1E-7398-C818-0FD88807E64C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[ ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Total Requested]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>5022B550-898A-DEC3-FE25-BF7AFEA99BDF</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Total Filled]" id="4A349935-D83C-90B2-7BE7-A679DE509991">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Total Filled]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>14DBAC22-25DF-7401-AD98-3E0B7430F5F9</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Missed" id="F07F30C2-BE35-F899-DDDD-88CE2FCB607C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:23:34 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Missed</alias>
+<dataType>INT</dataType>
+<expression>Cast((fr.total_requested - fr.total_filled) As INT)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Fill Rate]" id="9B0AC9A4-3303-9A1F-8663-4C5098B5F9BE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Fill Rate]</alias>
+<dataType>DECIMAL (4,2)</dataType>
+<expression>Cast(fr.fill_rate As DECIMAL(4,2))</expression>
+<reference>false</reference>
+<referencedColumn>D4F78EBF-F3E5-3F33-D1E1-C43A4A4F84B9</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Order Date Key]" id="168BCE91-D57E-C3EC-0EF9-0F8C3094F644">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Order Date Key]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>9E521512-173A-EF41-02BA-05002BAFDF14</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+<associations>
+<colAssociation fkAssociation="003F3FCF-D703-16ED-87D5-59772B2DE1DD" referredColumn="596C453B-F92B-DA1D-9B46-755FA25A753E"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Process Date Key]" id="D39C4E2D-8911-F4C3-29C4-4A7D8288C9A9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Process Date Key]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>BD7C3CAB-3DD5-CC7F-BB5B-4DE15AC417C4</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+<associations>
+<colAssociation fkAssociation="4B6CB2FC-EFC3-44BA-D1C8-CE6908A48CB1" referredColumn="596C453B-F92B-DA1D-9B46-755FA25A753E"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Estd Delivery Date Key]" id="7E9BA269-3975-DD03-573E-69A1A049FB67">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Estd Delivery Date Key]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>15FD16E8-DEE0-E58B-9097-0B6BEB5D49DC</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+<associations>
+<colAssociation fkAssociation="00CC3ACB-7AE1-72C9-4AB3-13076B45D223" referredColumn="596C453B-F92B-DA1D-9B46-755FA25A753E"/>
+</associations>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Qty Incoming]" id="1544AB47-CD47-E90D-ADFF-A055C241590F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:23:34 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Qty Incoming]</alias>
+<dataType>INT</dataType>
+<expression>Cast(fr.qty_incoming As INT)</expression>
+<reference>false</reference>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+<tableAlias>fr</tableAlias>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Days To Deliver]" id="4157ECB6-F160-1024-A2A5-BC150702B511">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Days To Deliver]</alias>
+<dataType>INTEGER</dataType>
+<reference>false</reference>
+<referencedColumn>AA4EB972-5B59-F1E3-43E9-62BB24FE0EEB</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Status" id="3DF0922E-9B70-7921-405F-493790CE5E26">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Status</alias>
+<dataType>VARCHAR (20)</dataType>
+<reference>false</reference>
+<referencedColumn>FA542F07-F697-F326-C998-C81ED5FF757D</referencedColumn>
+<table>50FC10B5-D621-7435-8E12-EA91DA742913</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Summary Status]" id="061AD002-51DE-3F3F-B223-A915BF0CF074">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:23:34 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Summary Status]</alias>
+<dataType>VARCHAR(50)</dataType>
+<expression>Cast(inner_tbl.summary_status As VARCHAR(50))</expression>
+<reference>false</reference>
+<tableAlias>inner_tbl</tableAlias>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="50FC10B5-D621-7435-8E12-EA91DA742913">
+<container>true</container>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="504CC86A-A9F7-B858-9C05-D7AFB8E04E24">
+<columnName>source</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="245E2952-F5E0-0052-1BA2-71A31393EBB6">
+<columnName>dealer_code</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="474ECA3F-63D7-E572-2DF5-6562A5455F23">
+<columnName>product_key</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="42720B0C-1E81-011F-E238-5D3F86C3B4FF">
+<columnName>purchase_class</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="05FEF362-BDFB-70C5-434A-6049E3384B8F">
+<columnName>item_status</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AECD7AFF-2B10-F3CC-16A4-3658241458D0">
+<columnName>discontinued</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="220E2BA2-2836-379C-30FD-2CEB2CB0461A">
+<columnName>inv_min</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3D48ACA3-2C84-1C6B-97DE-C2F4CDB34D41">
+<columnName>inv_max</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B2B9437F-E985-41D3-45EF-135FFE81A9F8">
+<columnName>safety_stock</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7A49882E-0019-C9E8-B7AC-747F8943EE5C">
+<columnName>qty_on_hand</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9414D34A-AC8F-E42E-C0E2-213B1D88A362">
+<columnName>qty_available</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7A6DD3C9-8BFB-E0C2-5F23-D20DF1910FFD">
+<columnName>qty_on_po</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5022B550-898A-DEC3-FE25-BF7AFEA99BDF">
+<columnName>total_requested</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="14DBAC22-25DF-7401-AD98-3E0B7430F5F9">
+<columnName>total_filled</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D4F78EBF-F3E5-3F33-D1E1-C43A4A4F84B9">
+<columnName>fill_rate</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9E521512-173A-EF41-02BA-05002BAFDF14">
+<columnName>order_date_key</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BD7C3CAB-3DD5-CC7F-BB5B-4DE15AC417C4">
+<columnName>process_date_key</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="15FD16E8-DEE0-E58B-9097-0B6BEB5D49DC">
+<columnName>est_delivery_date_key</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7C3DC4F8-594A-99F5-C129-5985E04C0BB6">
+<columnName>qty_incoming</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AA4EB972-5B59-F1E3-43E9-62BB24FE0EEB">
+<columnName>days_to_deliver</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FA542F07-F697-F326-C998-C81ED5FF757D">
+<columnName>status</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7513BD17-9A7B-A5FB-CBB5-C80F809ADB1B">
+<columnName>location_key</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CCEF493E-F438-3E90-72B5-2465442029D5">
+<columnName>core</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B7EAAE72-132E-08DB-BADE-4B02F0B91139">
+<columnName>classification_id</columnName>
+<schema>edw</schema>
+<tableName>fact_fill_rate</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="747098A8-C0AD-9563-FB03-DBADE0508EB9" name="vw_fact_fill_rate_vw_dim_product_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:29:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="C05CE7CA-1BA1-D9FA-308E-FC6E67BDF4D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DBAAB2B-96D3-39FA-93A2-330A413BCFF6" name="vw_fact_fill_rate_vw_dim_location_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:29:36 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+</ind_PK_UK>
+<ind_PK_UK id="1E2C4C7C-B841-6085-907A-54E1316AE62D" name="vw_fact_fill_rate_vw_dim_date_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:29:43 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="168BCE91-D57E-C3EC-0EF9-0F8C3094F644"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9EB0FCE8-1204-8063-560F-2503999C0275" name="vw_fact_fill_rate_vw_dim_date_FKv1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:30:01 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="D39C4E2D-8911-F4C3-29C4-4A7D8288C9A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B12AE50-C215-2665-91B1-96D417B5B6A4" name="vw_fact_fill_rate_vw_dim_date_FKv2">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 10:30:10 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="7E9BA269-3975-DD03-573E-69A1A049FB67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

@@ -1,0 +1,529 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="CC5B4661-2849-0865-45A4-C02FFACB02D1" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="vw_dim_date">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<ordsAlias>v_dim_date</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT edw.dim_date.date_key AS [Date Key],
+  edw.dim_date.date_seq AS [Date Seq],
+  edw.dim_date.date AS [Date Time],
+  edw.dim_date.full_date AS Date,
+  edw.dim_date.day_of_month AS [Day of Month],
+  edw.dim_date.day_name AS [Day Name],
+  edw.dim_date.day_of_week AS [Day of Week],
+  edw.dim_date.day_of_week_in_month AS [Day of Week in Month],
+  edw.dim_date.day_of_week_in_year AS [Day of Week in Year],
+  edw.dim_date.day_of_quarter AS [Day of Quarter],
+  edw.dim_date.day_of_year AS [Day of Year],
+  edw.dim_date.week_of_month AS [Week of Month],
+  edw.dim_date.week_of_quarter AS [Week of Quarter],
+  edw.dim_date.week_of_year AS [Week of Year],
+  edw.dim_date.month AS Month,
+  edw.dim_date.month_name AS [Month Name],
+  edw.dim_date.month_of_quarter AS [Month of Quarter],
+  edw.dim_date.quarter AS Quarter,
+  edw.dim_date.year AS Year,
+  edw.dim_date.month_year AS [Month Year],
+  edw.dim_date.yyyymm AS YYYYMM,
+  edw.dim_date.yyyyww AS YYYYWW,
+  edw.dim_date.year_quarter AS [Year Quarter],
+  edw.dim_date.month_name_short AS [Short Month Name],
+  edw.dim_date.quarter_name AS [Quarter Name],
+  edw.dim_date.days_in_month AS [Days in Month],
+  edw.dim_date.days_in_quarter AS [Days in Quarter],
+  edw.dim_date.days_in_year AS [Days in Year],
+  edw.dim_date.first_day_of_month AS [First Day of Month],
+  edw.dim_date.last_day_of_month AS [Last Day of Month],
+  edw.dim_date.first_day_of_quarter AS [First Day of Quarter],
+  edw.dim_date.last_day_of_quarter AS [Last Day of Quarter],
+  edw.dim_date.first_day_of_year AS [First Day of Year],
+  edw.dim_date.last_day_of_year AS [Last Day of Year],
+  edw.dim_date.is_holiday AS [Holdiay Flag],
+  edw.dim_date.is_weekday AS [Weekday Flag],
+  edw.dim_date.holiday AS Holiday,
+  edw.dim_date.day_factor AS [Day Factor]
+FROM edw.dim_date]]></userDefinedSQL>
+<parsed>true</parsed>
+<syntaxProvider>MSSQL</syntaxProvider>
+<originalTableID>5EFEA321-4ACE-EE67-83D2-C94CD72C0DB9</originalTableID>
+<includeSchemaNameInQuery>true</includeSchemaNameInQuery>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Date Key]" id="596C453B-F92B-DA1D-9B46-755FA25A753E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[date_key : The uniuqe date identifier for the date based on the combination of 
+Year_Month_Date in the format of YYYYMMDD
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Date Key]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_date.date_key</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Date Seq]" id="6C1724F3-56E4-B8B5-21CE-1BB827069825">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Incrementing sequential number starting from 1  ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Date Seq]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_date.date_seq</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Date Time]" id="85DAB442-C086-A947-AA7A-CBEB227D3B85">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Date Time]</alias>
+<dataType>DATE</dataType>
+<expression>edw.dim_date.date</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Date" id="CA42AC76-96D9-AAF7-83A7-DAFFEB152FC3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date in the format of DD/MM/YYYY]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Date</alias>
+<dataType>CHAR (10)</dataType>
+<expression>edw.dim_date.full_date</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Day of Month]" id="276D1B1B-3624-7CAF-4B0C-7729065EF2EE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[The day of the month]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Day of Month]</alias>
+<dataType>VARCHAR (2)</dataType>
+<expression>edw.dim_date.day_of_month</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Day Name]" id="BEC19B48-46C2-C41C-D1E2-FB2ED67ABC62">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[The name of the day (Monday through sunday)
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Day Name]</alias>
+<dataType>VARCHAR (9)</dataType>
+<expression>edw.dim_date.day_name</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Day of Week]" id="4D8591CC-72E5-50FC-E816-53ABF0B9BFAA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Day of the week ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Day of Week]</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_date.day_of_week</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Day of Week in Month]" id="832E79CB-A7C5-4F6A-58CA-AEB366EAD6F1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Day of week in the month]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Day of Week in Month]</alias>
+<dataType>VARCHAR (2)</dataType>
+<expression>edw.dim_date.day_of_week_in_month</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Day of Week in Year]" id="12B5E0CA-AA72-200F-FA55-475E64ACF249">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Day of week in the year
+
+
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Day of Week in Year]</alias>
+<dataType>VARCHAR (2)</dataType>
+<expression>edw.dim_date.day_of_week_in_year</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Day of Quarter]" id="ADCC321C-1C14-357C-75B1-3B7B8B309981">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[day of quarter]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Day of Quarter]</alias>
+<dataType>VARCHAR (3)</dataType>
+<expression>edw.dim_date.day_of_quarter</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Day of Year]" id="92D556F6-B243-6DFC-E679-3BD381DF8872">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[day of the year]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Day of Year]</alias>
+<dataType>VARCHAR (3)</dataType>
+<expression>edw.dim_date.day_of_year</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Week of Month]" id="74B7022E-3F35-4F11-4D1C-69570416A731">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[what week is it in the month]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Week of Month]</alias>
+<dataType>VARCHAR (1)</dataType>
+<expression>edw.dim_date.week_of_month</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Week of Quarter]" id="E47C2201-2ABF-4B99-F3DD-8933E32D8C98">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[what is the week in the quarter]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Week of Quarter]</alias>
+<dataType>VARCHAR (2)</dataType>
+<expression>edw.dim_date.week_of_quarter</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Week of Year]" id="92592467-6ADD-A519-49D8-CAD8DB564EA1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[what week is it in the year]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Week of Year]</alias>
+<dataType>VARCHAR (2)</dataType>
+<expression>edw.dim_date.week_of_year</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Month" id="B292B138-8D29-34BE-36B2-BF1F7AA7DBA6">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Month number]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Month</alias>
+<dataType>VARCHAR (2)</dataType>
+<expression>edw.dim_date.month</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Month Name]" id="562BD871-7E09-8ECF-37E8-7572DD991607">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Month name (January through December)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Month Name]</alias>
+<dataType>VARCHAR (9)</dataType>
+<expression>edw.dim_date.month_name</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Month of Quarter]" id="44C842A0-21C4-8F1F-85BF-D7242338CAD4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Month number of the quarter]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Month of Quarter]</alias>
+<dataType>VARCHAR (2)</dataType>
+<expression>edw.dim_date.month_of_quarter</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Quarter" id="43B74AC5-83BA-CD63-F4AC-FE3CDF3D307B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quarter number(1 through 4 ) ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Quarter</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_date.quarter</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Year" id="E1C73AC0-3E21-45D8-08E2-8E648773571E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Year number ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Year</alias>
+<dataType>CHAR (4)</dataType>
+<expression>edw.dim_date.year</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Month Year]" id="2A43FDEE-E214-D9E3-B2C4-4C68E2DF91D1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Month year in the format (MMM-YYYY)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Month Year]</alias>
+<dataType>CHAR (10)</dataType>
+<expression>edw.dim_date.month_year</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="YYYYMM" id="40D8561C-6DA6-D823-2B26-FBF13CB4E407">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date in the format YYYYMM ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>YYYYMM</alias>
+<dataType>CHAR (6)</dataType>
+<expression>edw.dim_date.yyyymm</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="YYYYWW" id="FED7CB92-B586-27B5-7648-DB4AF540DA5E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date in the format YYYYWW]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>YYYYWW</alias>
+<dataType>CHAR (6)</dataType>
+<expression>edw.dim_date.yyyyww</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Year Quarter]" id="8E2CC193-92FB-244B-7CCA-2800236A1959">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date in the Year quarter format YYYYQ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Year Quarter]</alias>
+<dataType>CHAR (5)</dataType>
+<expression>edw.dim_date.year_quarter</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Short Month Name]" id="D1F89336-7AD2-2D5A-7C8E-C652F507FD49">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Short name for the month (Jan through Dec)
+
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Short Month Name]</alias>
+<dataType>CHAR (3)</dataType>
+<expression>edw.dim_date.month_name_short</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Quarter Name]" id="A598514C-0417-0F67-4E71-426FDA5BF31B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quarter name (Q1 through Q4)
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Quarter Name]</alias>
+<dataType>CHAR (2)</dataType>
+<expression>edw.dim_date.quarter_name</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Days in Month]" id="A6803F0E-F582-B806-F9EB-DE0E07073A90">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Number of days in a given month  (28,29,30,31)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Days in Month]</alias>
+<dataType>TINYINT</dataType>
+<expression>edw.dim_date.days_in_month</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Days in Quarter]" id="EBC436C0-A277-637A-2ECF-1BB102B183BF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Number of days in a quarter (90,91,92)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Days in Quarter]</alias>
+<dataType>TINYINT</dataType>
+<expression>edw.dim_date.days_in_quarter</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Days in Year]" id="B36744C4-2B7D-6619-67D4-186D3596DD50">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Number of days in a year (365 or 366)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Days in Year]</alias>
+<dataType>SMALLINT</dataType>
+<expression>edw.dim_date.days_in_year</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[First Day of Month]" id="C67D579F-DA35-8B4E-B548-850C8FBABDE4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[First day of the month in the format YYYY-MM-DD]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[First Day of Month]</alias>
+<dataType>DATE</dataType>
+<expression>edw.dim_date.first_day_of_month</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Last Day of Month]" id="2C9ACB5D-0C26-DF70-EC05-8E3F7406A134">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Last day of the month in the format YYYY-MM-DD]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Last Day of Month]</alias>
+<dataType>DATE</dataType>
+<expression>edw.dim_date.last_day_of_month</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[First Day of Quarter]" id="23EA8255-939F-826D-54BC-3E41ED8E9846">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[First day of the quarter in the format YYYY-MM-DD]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[First Day of Quarter]</alias>
+<dataType>DATE</dataType>
+<expression>edw.dim_date.first_day_of_quarter</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Last Day of Quarter]" id="C07A176E-3A5D-DE72-CD3F-A1D555C23C7A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Last day of the quarter in the format YYYY-MM-DD]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Last Day of Quarter]</alias>
+<dataType>DATE</dataType>
+<expression>edw.dim_date.last_day_of_quarter</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[First Day of Year]" id="68A33FAA-8B64-FFAF-9DF2-A0FF3491DD4C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[First day of the year  in the format YYYY-MM-DD]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[First Day of Year]</alias>
+<dataType>DATE</dataType>
+<expression>edw.dim_date.first_day_of_year</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Last Day of Year]" id="3CDE562A-D33F-9081-AF0E-CCCD1D7573D3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of the year  in the format YYYY-MM-DD]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Last Day of Year]</alias>
+<dataType>DATE</dataType>
+<expression>edw.dim_date.last_day_of_year</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Holdiay Flag]" id="DD7D1A0F-DBC8-2847-4D8F-9BFF15A4333C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[is the give date a holiday ?]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Holdiay Flag]</alias>
+<dataType>BIT</dataType>
+<expression>edw.dim_date.is_holiday</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Weekday Flag]" id="C8185459-29CE-9812-41E5-0E503A20E4BF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Is the given day a weekday ?]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Weekday Flag]</alias>
+<dataType>BIT</dataType>
+<expression>edw.dim_date.is_weekday</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Holiday" id="77D048D8-E1B2-0CF0-6022-CC02B4F19188">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[The name of the holiday for example (Christmas , Independence day etc)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Holiday</alias>
+<dataType>VARCHAR (50)</dataType>
+<expression>edw.dim_date.holiday</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Day Factor]" id="5E942222-C03D-E98E-E8E5-25CC803BD795">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Day factor (1 for Weekday , 0.5 for Saturday and 0 for Sunday)]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Day Factor]</alias>
+<dataType>DECIMAL (2,1)</dataType>
+<expression>edw.dim_date.day_factor</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="38EF578C-7706-4268-F239-6F7CCA42AC59" name="vw_dim_date_PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:51:58 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="596C453B-F92B-DA1D-9B46-755FA25A753E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

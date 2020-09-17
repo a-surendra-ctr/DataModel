@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fact invoice sales transfer dim product fk" directorySegmentName="seg_0" id="56EB2F97-07CB-0762-6D21-632A0C2877B9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 18:20:11 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<sourcePk>50CFC1AB-706B-E0B0-0509-1A6FFC15A747</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1BD7DC16-F2F7-8E6C-41D8-0DE2A8916D17</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>94A49D58-5549-00DA-680D-F94F865AF013</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

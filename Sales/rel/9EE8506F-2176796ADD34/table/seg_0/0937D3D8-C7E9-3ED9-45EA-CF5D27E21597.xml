@@ -1,0 +1,479 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0937D3D8-C7E9-3ED9-45EA-CF5D27E21597" name="fact_invoice">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>28C8D7E7-3DD3-CDD0-3833-95B84F507A28</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="company_no" id="46E2EFCD-3418-AFD0-E22B-F1343570CBDE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>D776ABEA-BF7F-E91D-FE89-1E37A1F6A667</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="po_no" id="1752C221-8656-A46D-1AEE-76D2B4850245">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>781AAEE6-B9CA-58E7-75EA-09D51753C47E</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="invoice_no" id="E849714E-E40E-7153-9FC3-B3DFE0CBF7CA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>91A0A245-CA0B-68C0-7AC3-642E3C723B59</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="line_no" id="480D3B3E-6142-6AC7-677A-8C428277F6F7">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>6DA13EA3-0D59-8987-58C1-215224AFC727</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<domain>046CE6A6-317A-B8E8-6705-0109C40979BA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_no" id="9A39A29C-FFC8-14FC-F475-43A14885613B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>A5C7D325-A736-4BC1-DC34-BC0B319D8FA9</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oe_line_number" id="90D5CFDA-C760-7674-B081-92A1961935BA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>3D3AD70A-21C6-BFE6-CF85-39D13CF220CD</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<domain>046CE6A6-317A-B8E8-6705-0109C40979BA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salesrep_id" id="3786196F-9E2B-E786-E828-11BEB7B019F3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>1CD20B7B-A261-1E8F-6933-5549CF5A5523</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="revenue_amount" id="E04816D6-4863-DD96-AABD-239EDE3303EA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>FE149C85-5AD9-A158-10EB-7D198AB640BF</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cogs_amount" id="F40544C6-2CBB-FE56-10BC-C60C66C2F845">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>4D4BE4EC-C14A-A22B-C22E-3CDC9CB0DFDA</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sales_tax_amount" id="DB712DDD-B914-7486-CDD6-CAA1A8943963">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>4851B1BE-824F-B0DE-8080-0A2F705675FD</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qty_shipped" id="47D5ED98-C370-8956-D569-77A5BE4E7C39">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>A40D4106-6E48-C2B2-E595-34E3E5D86E8B</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>5CB1BFA2-67AA-C28A-F356-7E0BF4BC4C40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qty_shipped_actual" id="5B2B7B83-2CF6-795F-51AC-7BB7A20B3842">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>42108D2C-D9C5-EEF1-6A6C-7969A41F7F76</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>5CB1BFA2-67AA-C28A-F356-7E0BF4BC4C40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_last_modified_hdr" id="FDA24ECF-60FC-B274-1551-87CA863EB58B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>D57B3EEB-8D57-68E3-3C94-D706D8A9B1F4</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7DC04A03-2557-6BF8-CD8F-E683E102AB88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_last_modified_line" id="C2739F11-3991-79A4-6563-2F838D464025">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>EAA4D7C5-7278-8620-6844-F55133AD8534</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7DC04A03-2557-6BF8-CD8F-E683E102AB88</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qty_ordered" id="B1D3FD4B-B44E-AD4B-E1E9-60EC9FB006E6">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>201C3A5F-619E-A99F-697E-87C488D58A89</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>5CB1BFA2-67AA-C28A-F356-7E0BF4BC4C40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qty_invoiced" id="620D04BF-37E1-9EEF-3F95-F644B6800C69">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>2F203DCA-3F2C-1D56-5196-F71148C2CE55</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>5CB1BFA2-67AA-C28A-F356-7E0BF4BC4C40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unit_price" id="EA2F2231-1901-15CA-6F0A-3714882E0501">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>3F390D2B-BDA0-0AC9-964D-CCF40C501FEE</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unit_cost" id="B3E59C73-6E53-0EA8-F24A-9157CB3EB681">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>382801A6-497F-F888-1D07-31869C5BE68B</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sale_transfer" id="4C50E8C6-26FA-5F6B-67AB-51F083CA93D7">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>3055C313-0BD7-30BC-B042-82F43D629F44</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="margin_per_item" id="ED076A08-CB8A-6AA3-8534-797452CDCA0A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>F0CDF491-894B-890E-49F8-2BBB17BB6002</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>5CB1BFA2-67AA-C28A-F356-7E0BF4BC4C40</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_key" id="8882FD3C-BE40-C962-26C7-B759AB61608E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>BB696694-14AA-9C37-B1DF-AB351076BA14</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F08B628-138C-C26D-2319-80E197132402" referredColumn="A153D69E-FC22-92A8-3BA3-D7100BB55E75"/>
+</associations>
+</Column>
+<Column name="bill_to_customer_key" id="F72C88E9-2DA5-6CBF-DA0C-5EBD30B2ACD2">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>D2F90874-C7E4-A584-4FDD-EF7390C0DB4C</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C25A7A74-14A5-2ACF-8104-064D56C75DD8" referredColumn="381ED497-EF48-A79F-113F-9A2B2B074826"/>
+</associations>
+</Column>
+<Column name="sold_to_customer_key" id="8DEEBD16-58A9-D17E-37E4-42B5C76FF681">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>E25DC377-A991-BAB8-6A27-8F1AA410D06E</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7265558E-CF71-F82D-9684-668D6290833D" referredColumn="381ED497-EF48-A79F-113F-9A2B2B074826"/>
+</associations>
+</Column>
+<Column name="location_key" id="4EA5A2D4-6824-7F02-EACC-641E7A651AFC">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>9271080C-36FE-069D-7768-92C907F498A0</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A39F4B23-E6E3-8018-9D08-6CBF1F31FD09" referredColumn="277221C8-C33C-DABF-C3B9-9D0A3EFEEE45"/>
+</associations>
+</Column>
+<Column name="product_key" id="7C6145D8-7960-BFA3-2E96-CB01875048D5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>5E29FF5F-031A-E7A5-BE89-CAB179B5C773</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7781D2AD-653B-810F-0A21-1E7BD81A2541" referredColumn="762B8382-6DE4-935E-1444-60FB0661EC81"/>
+</associations>
+</Column>
+<Column name="Junk_Fact_Sales_Attributes_Key" id="0BC99D43-E31E-C209-745C-D016846D982B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>D2A80F58-4AB2-042C-6DB3-9A617CC7970C</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<domain>0F3CC54D-14E2-172E-0574-E5F635906A8E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="183D68D9-4988-5441-7EBE-7D1FB77D4FB8" referredColumn="2E893AF5-7F6E-5F97-FA0D-2B7E9CB9A88A"/>
+</associations>
+</Column>
+<Column name="dim_Ship_to_ship_to_Key" id="7B95ADC7-81EA-72AC-6BEF-F6E42965C3D6">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>1293030E-54FE-0537-E0A0-DC139C8E9AE5</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21B1C247-F2FA-2C23-961D-CB91D87368ED" referredColumn="27B3B94A-453E-8835-BC30-93A5D0C80E7D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="79889AA4-5A48-4FA1-D9C6-250357041BA4" name="fact_invoice_PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>FEB8CC80-9E2D-86A0-749B-1D1BCA7057F0</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8882FD3C-BE40-C962-26C7-B759AB61608E"/>
+<colUsage columnID="F72C88E9-2DA5-6CBF-DA0C-5EBD30B2ACD2"/>
+<colUsage columnID="8DEEBD16-58A9-D17E-37E4-42B5C76FF681"/>
+<colUsage columnID="4EA5A2D4-6824-7F02-EACC-641E7A651AFC"/>
+<colUsage columnID="7C6145D8-7960-BFA3-2E96-CB01875048D5"/>
+<colUsage columnID="0BC99D43-E31E-C209-745C-D016846D982B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3C74A2D-B5D8-B36F-FBC8-12E578A85C95" name="fact_invoice_dim_customer_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>1991038A-225F-B24C-C2B4-97B031759718</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F72C88E9-2DA5-6CBF-DA0C-5EBD30B2ACD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06EA8BD0-BDF5-5453-3A23-BBDE67C40FE7" name="fact_invoice_dim_customer_FKv2">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>66926392-176B-1448-832D-A677CF7593D5</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DEEBD16-58A9-D17E-37E4-42B5C76FF681"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0625EEE5-3F69-9492-C5EE-3B4904331EFE" name="fact_invoice_dim_date_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>2DE7B4CC-C781-9C04-685D-C24B639A8103</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8882FD3C-BE40-C962-26C7-B759AB61608E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AB52453-43EC-AE19-5B09-10926AED5874" name="fact_invoice_dim_junk_fact_sales_attributes_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>3E791A6F-E431-8ECD-B74A-1B9EC0652E81</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BC99D43-E31E-C209-745C-D016846D982B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE186052-9E99-97AF-CD8C-6C525C50074A" name="fact_invoice_dim_product_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>07540998-E50D-FF02-A453-210A8893400C</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C6145D8-7960-BFA3-2E96-CB01875048D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AC85C2A-B908-8CDA-A780-A16C70F67E61" name="fact_invoice_dim_ship_to_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>F1666E3E-713E-3AC8-8D66-28B54A6B3AE7</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B95ADC7-81EA-72AC-6BEF-F6E42965C3D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59F976A1-0A56-9125-1225-DE3F6C533C7C" name="fact_invoice_dim_location_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-13 09:03:40 UTC</createdTime>
+<generatorID>92ABD38E-6EFD-EBFD-D256-C7C515C45E7E</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EA5A2D4-6824-7F02-EACC-641E7A651AFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

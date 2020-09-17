@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableViewProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableViewProxySqlServerv2k5" name="vw_fact_fill_rate" directorySegmentName="seg_0" id="4187A93E-9AFA-81C6-3876-DA6ADCCB3E88">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-28 09:58:31 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nameChanged>true</nameChanged>
+<schemaObject>8669DC12-6F49-295B-3C55-3CC4EFB41BC3</schemaObject>
+<dataBase>DB_NULLELEMENT</dataBase>
+</TableViewProxySqlServerv2k5>

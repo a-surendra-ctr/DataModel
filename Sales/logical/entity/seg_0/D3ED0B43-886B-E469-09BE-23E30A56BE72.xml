@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D3ED0B43-886B-E469-09BE-23E30A56BE72" name="dim_employee">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:12:54 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="employee_key" id="471491D6-DC50-C321-A755-B7DAC851D1BE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:13:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Employee Key ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_number" id="D2C65A61-2A44-05B3-0177-343D1E167261">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:13:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique employee number]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_name" id="90D9C192-D94F-A4F6-FDB4-54DD7804C716">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:14:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[The name of the employee]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email_address" id="E20169B4-A022-0842-BA71-9CC3A55CE4EE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:14:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[The email address of the employee]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="job_title" id="F46241E6-5A71-773C-B535-290E09A1AE76">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:15:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[The job title of the employee]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_manager_number" id="E2ACB098-03DE-33DB-FA86-E02B6608EA35">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:15:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Employee number of the Manager for this employee]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_manager_key" id="2A78A157-77CC-BBE6-52DE-799FC1C93A8C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:43:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Employee Key of the manager for this employee]]></commentInRDBMS>
+<generatorID>FE083F21-58E4-415F-24DC-D63FEB05CC5D</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>471491D6-DC50-C321-A755-B7DAC851D1BE</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2A8BEE0C-7A95-5946-0A0F-6447F7CB5E39" name="dim_employees PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-30 10:22:23 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>471491D6-DC50-C321-A755-B7DAC851D1BE</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="137FDA07-FF5E-0906-744E-A224FC792248" name="dim_employees_UQ">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-02 17:12:13 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="false"/>
+</engineerTo>
+<newElementsIDs>E20169B4-A022-0842-BA71-9CC3A55CE4EE,F46241E6-5A71-773C-B535-290E09A1AE76</newElementsIDs>
+<usedAttributes>
+<attributeRef>E20169B4-A022-0842-BA71-9CC3A55CE4EE</attributeRef>
+<attributeRef>F46241E6-5A71-773C-B535-290E09A1AE76</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

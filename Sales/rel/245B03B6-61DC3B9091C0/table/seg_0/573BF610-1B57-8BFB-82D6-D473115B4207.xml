@@ -1,0 +1,1231 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="573BF610-1B57-8BFB-82D6-D473115B4207" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="dim_product">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<generatorID>1BD7DC16-F2F7-8E6C-41D8-0DE2A8916D17</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_key" id="3104F473-7891-10BF-7A4A-9F8513892771">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[product key]]></commentInRDBMS>
+<generatorID>C90418DE-A903-21DD-29DE-D58BC95A9186</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_id" id="3B3D4487-EE42-D07B-C3EA-6F9E23DD67A4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique item identifier.
+]]></commentInRDBMS>
+<generatorID>4F350634-46DB-54A4-5EFF-77D3E891D26A</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_id" id="B3445A57-9B48-5DFA-77E6-E08BE7F6A5B1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique item ID.
+]]></commentInRDBMS>
+<generatorID>EABB898C-9A4B-AB28-78B0-8C5A3040C5FB</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_desc" id="007A7618-C345-F4EB-263B-D3A194F919B8">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Item description.
+]]></commentInRDBMS>
+<generatorID>5BB2ED0C-986E-99E9-4A29-D1EB1F6AECC7</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="delete_flag" id="9A463D81-1B17-8209-D8AA-DDC0053CDADB">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Record flagged as delete (exclude from reports).
+]]></commentInRDBMS>
+<generatorID>06B9EFB6-1EF2-6E59-51FA-D0323D841651</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="weight" id="951C2C83-CEAD-A9E0-E3A5-AEE34DBE4327">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Item weight.
+]]></commentInRDBMS>
+<generatorID>ACE91EA2-F620-E097-0EAE-AFC5588B7EF7</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="net_weight" id="0266CCAB-23F1-BAC2-256E-06DBA9AF5DA7">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Item weight excluding packaging or packing materials.
+]]></commentInRDBMS>
+<generatorID>D48F1909-06B1-66F5-7B61-F2D8BDEB471E</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inactive" id="11D7DD6F-4EF3-3500-810D-2F0566D7E45B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Item inactive flag (Yes/No)
+]]></commentInRDBMS>
+<generatorID>15D8C7B3-BAC5-CB53-D9AD-253A43CB3BA4</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="forecast_group" id="3E1F2845-87A6-85DC-5DBF-9AB73C9E9A9F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[User defined to hold forcast group values. Example: Commuter/Touring, Winter, All Terrian, Performance, Commercial; used in ToolsGroup application.]]></commentInRDBMS>
+<generatorID>CF3142BB-9497-EC78-16E3-D250BE2683F5</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="brand_code" id="B694D001-786C-A270-B119-A99B966F42AF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifies brand code.]]></commentInRDBMS>
+<generatorID>5AA9BF75-C57B-DA69-1C86-A420F4C44529</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="brand_group_id" id="6E895417-BA6C-43B2-BA9D-ABE32C93DC91">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[class_1id.]]></commentInRDBMS>
+<generatorID>44BEC148-7F5D-AC94-3A4D-AC14851F74C6</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="brand_group" id="3641EB0B-3ECE-1D32-81B7-3EF94BB71BCD">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tier description; Brand Group]]></commentInRDBMS>
+<generatorID>5395CA85-7985-B2A0-9635-6BB5405EEAD3</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model_id" id="8867EB62-F61E-E8EF-93FF-CBF25438D139">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[class_2id
+]]></commentInRDBMS>
+<generatorID>A825E567-F806-87A2-803F-9BD35597E47C</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model" id="70D21A4E-2D66-0722-4E8A-4B2E0504003D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicates the pattern code of an item. Provided by supplier. Pattern description field has extended/full information.]]></commentInRDBMS>
+<generatorID>2DDE1843-E59D-7B7A-CFB8-A5023D661346</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="classification_id" id="B0D60FB9-57BE-5C9B-02A1-9DD950F7DB63">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class_id3]]></commentInRDBMS>
+<generatorID>06D163B1-91CC-5993-5C77-AB915C3E65B8</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="classification" id="6EE6EC6A-119C-6DE5-98E8-A0E164655865">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class3_id description :USTMA coding description.(Classification)]]></commentInRDBMS>
+<generatorID>3B27D303-8780-C827-F309-5BF6E2E8D532</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="brand_id" id="0B10C3E7-5D1E-108B-7F9F-E0196AA2085E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class_id4]]></commentInRDBMS>
+<generatorID>0F29AAAB-D263-F014-B22B-0008B1363B97</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="brand" id="D7129BA7-60BB-DC1A-5187-37CE9A7DF54B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class4_id description :USTMA coding description]]></commentInRDBMS>
+<generatorID>4753DB8C-6DB3-4B97-D696-854F3B2A7873</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="web_enabled_flag_id" id="DE9F7C32-40F4-ECBB-AAAA-8C00DF4D511F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class_id5]]></commentInRDBMS>
+<generatorID>59A2D0A9-1BE2-CCDD-39FB-947AE84D68DE</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="web_enabled_flag" id="4CBCBF26-D912-AAC3-1F7C-768C766D1D1E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class5_id description :B2B-I value; allows the item to be made available via the website.
+]]></commentInRDBMS>
+<generatorID>34365AD1-5139-B5F3-684C-2D90219B649B</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="best_for_customer_price" id="060C4FFB-0E49-8144-11D1-173353AD0024">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Pricing - Best for Customer
+]]></commentInRDBMS>
+<generatorID>46E379F3-01AB-AD85-6266-8FD9B9E592EA</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="go_to_market_price" id="31D3ADD4-93A5-C7F0-5409-C3442DDF7F11">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Pricing - Go To Market
+]]></commentInRDBMS>
+<generatorID>B5CAECC0-C5CA-A78E-34F9-CBCDFC2618E9</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="low_volume_customer_price" id="7BEADA7A-B5FF-6AF9-3317-FB821FFB51EE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Pricing - Low Volume Customers
+]]></commentInRDBMS>
+<generatorID>2D4CDC56-2AB5-06DF-8B9D-64224C68F625</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ecommerce_price" id="5541F670-C531-FFDC-1952-D47CAB45A19B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ecommerce 
+]]></commentInRDBMS>
+<generatorID>DAB1A78C-B99F-2EDF-49C8-EE8F692D72ED</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="carmax_price" id="2B06355A-0F23-42F0-D343-663854B4AF09">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[CarMax
+]]></commentInRDBMS>
+<generatorID>E6B0A6AD-9014-FEEE-2E67-F063F537B7F6</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="retail_customer_price" id="DEFADA4B-BBC9-95D9-5CF8-AF5C4082816D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Retail Customers
+]]></commentInRDBMS>
+<generatorID>9D29D90C-FEB2-9E0D-86A7-1F1AC7152886</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="base_for_gy_dunlop_kelly_price" id="54FE4168-E106-484A-7F0B-322AA898104E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Base for Goodyear, Dunlop & Kelly
+]]></commentInRDBMS>
+<generatorID>4F3D3D4A-A75E-A686-3800-20C08716BA08</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="net_acquisition_cost_price" id="C4927B34-3755-7CFC-2024-93BEEA5DBF3C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Net Acquisition Cost
+]]></commentInRDBMS>
+<generatorID>4BF7DBD2-8C32-9F68-338E-F5CB24C8026F</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="speed_rating" id="399DD130-FEDB-414F-3CF7-F21481A59BFB">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Alphabetic value that matches to the maximum MPH the tire is capable of reaching without damage to the tire.
+]]></commentInRDBMS>
+<generatorID>2E67B0A1-EAE4-A6F2-BA2A-ED542FC93D39</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="load_range" id="B91DF07A-B967-1CDE-9906-2CF24761F1E4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Alphabetic ply rating of the tire.
+]]></commentInRDBMS>
+<generatorID>AFE72266-D814-D54A-634E-0CC3FE178B57</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="revs_mile" id="64B33156-B6C6-F59A-A045-1135C617E428">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tire's revolutions per mile.
+]]></commentInRDBMS>
+<generatorID>005180C2-A0C3-391C-65BF-713A599D0B3D</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="revs_km" id="27348339-A236-3354-DBCE-45DE0FDDCD2A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tire's revolutions per kilometer.
+]]></commentInRDBMS>
+<generatorID>E1BB79FA-EBC0-F06D-975A-F72053461CB4</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="min_rim_width" id="77C0E357-E3E2-30F1-3B66-8E757BAB5F80">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Minimum width of the wheel the tire is designed to be mounted on.
+]]></commentInRDBMS>
+<generatorID>8C55E542-5A22-3B75-3F40-964B083B9F72</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="max_rim_width" id="59E0A8CC-4019-5EB8-06A4-2A90BA6CFAB4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Maximum width of the wheel the tire is designed to be mounted on.
+]]></commentInRDBMS>
+<generatorID>7A68E21B-98CE-2BD1-21C0-DD0D43FE4B1B</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="single_max_load" id="B3BB4CEF-689A-F159-4BA8-E36E9B81D833">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numerical value (in lbs.) of the single load index.
+]]></commentInRDBMS>
+<generatorID>4F58EDC0-BA84-67F9-BAD2-2588B75AD741</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="single_max_psi" id="CCA7AD1A-1C94-336E-95FE-44EE55BAB775">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unused field. Currently using ud_capacity_psi field instead.
+]]></commentInRDBMS>
+<generatorID>D923DD4C-C622-095F-19E0-E44B9C67E3DF</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dual_max_load" id="175F9ED8-B4DF-7954-513A-6E33CB120972">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numerical value (in lbs.) of the dual load index.
+]]></commentInRDBMS>
+<generatorID>E56D3741-A78B-866E-8613-52AF179E1C0E</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dual_max_psi" id="EE218CEA-1B63-0FA7-CD17-4907A2C78421">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unused field. Currently using ud_capacity_psi field instead.
+]]></commentInRDBMS>
+<generatorID>7B63B756-FC48-8DA3-83E0-EB830C6EFFF1</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tread_depth" id="68B56E82-F366-8DC3-0D04-195E0FEC8033">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Verticle measurement between the top of the tire's tread rubber and bottom of the tire's deepest groove in 1/32 inch (currently unused).
+]]></commentInRDBMS>
+<generatorID>529F4D7A-669E-12D1-B212-92403E24387C</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="4DAAE032-CDCB-FD88-EB7E-CA81EEEE007D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Custom field used for Tools Group to identify item type.
+]]></commentInRDBMS>
+<generatorID>6C50A36C-78F6-803B-E7AD-323C41129D53</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="section_width" id="488BF0EE-DA99-1ACB-C2FA-859C35ECF596">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[3 digit numerical portion of the tire size that identifies the cross section of a tire in millimeters.
+]]></commentInRDBMS>
+<generatorID>3D9C2944-4900-F491-425A-3634010B620C</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="aspect_ratio" id="E4C91076-7883-2FF3-E418-2E9B4BE2E569">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Percentage ratio of the tire's sidewall height from rim to tread of the section width of the tire.
+]]></commentInRDBMS>
+<generatorID>2DED30E6-3983-4FF4-6F42-6AEF7C6C4FE4</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="utqg_wear" id="A69E66DC-C5A7-18E3-6895-E6F94C8E79BB">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numerical value of the UTQG (Uniform Tire Quality Grading) rating.
+]]></commentInRDBMS>
+<generatorID>D38CA87B-F0E7-FF31-A466-F70A91943CC1</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="utqg_traction" id="80022673-A8A0-3157-972A-97C7B762225C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Alphabetic value of the traction portion of the UTQG (Uniform Tire Quality Grading) rating.
+]]></commentInRDBMS>
+<generatorID>A6C41536-5FE8-E7E7-3D4C-D9946D19E279</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="utqg_tem" id="B2CC2C96-7F6F-CD3D-C0F6-7804C96C0C9D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Alphabetic value of the temperature portion of the UTQG (Uniform Tire Quality Grading) rating.
+]]></commentInRDBMS>
+<generatorID>660C2E2D-BA80-9336-B914-C5949D0BA074</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sidewall" id="20F5FAA5-18A1-6051-AC27-3C4D49929B50">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Condensed description of the visual appearance of the tire sidewall (side portion of the tire).
+]]></commentInRDBMS>
+<generatorID>93727EA6-6A35-BB88-A703-E468AC2161EA</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="warranty" id="EC969910-6F60-399E-D96D-5E0EFE9B5F01">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manufacturer's Tire Mileage warranty.
+]]></commentInRDBMS>
+<generatorID>98738346-576D-1C20-A5D7-5A892A4FEFA9</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="warranty_km" id="F250CD02-7D68-71D0-815D-352B859AF8EA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manufacturer's Tire Mileage warranty in KM.
+]]></commentInRDBMS>
+<generatorID>B64C711D-608F-FF20-17D9-B63D5D186B22</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country" id="3FD2B91A-8D9E-FE4B-6D84-E53465901FC2">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country of manufacture.
+]]></commentInRDBMS>
+<generatorID>7A2D3871-4CE0-A83E-4AF4-96419674EA17</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="run_flat" id="CA68E713-EE82-B47D-E617-CAD9F390091B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flag to identify tires which can operate upto 50miles at 50mph at 0 (zero) psi.
+]]></commentInRDBMS>
+<generatorID>6D451F8B-0E7F-B69A-34C2-A3A4FE82CBA6</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oem" id="B30787A7-A5D0-DDB2-70A9-0E201E91B95D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifies if a tire is Original Equipment Manufacturer (OEM).
+]]></commentInRDBMS>
+<generatorID>CE60BB59-92AB-66D1-BBDB-159C3D25FA1D</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="uhp" id="A24BD131-AE11-016E-E360-FA8B6596E781">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifies if the tire is Ultra High Performance (UHP; V-speed rated or higher).
+]]></commentInRDBMS>
+<generatorID>B6181545-75D1-D3C8-C0AA-5659E9E6B006</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rim_diameter" id="8A49BF47-3282-AAF4-00E8-9D1BB6216397">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tire diameter measured in inches.
+]]></commentInRDBMS>
+<generatorID>E124A795-8C70-D507-7E8A-02FD7DD10CC8</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="winter" id="29E08809-676A-4313-BD8C-768AD50BC6DC">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifies is a tire is rated for Winter use.
+]]></commentInRDBMS>
+<generatorID>36E0C273-CC12-F163-C3FC-356C08AAA4ED</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="load_ind" id="ECE78CD9-2667-361D-07F6-A6A73AF30DB9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numerical value used to determine relative load carrying capabilities.
+]]></commentInRDBMS>
+<generatorID>87E582CC-EA44-4AD9-4FE0-7BBD001A0FCD</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="utqg" id="251F4A82-DB67-0E8C-5606-429CDD299DE5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Uniform Tire Quality Grading rating.
+]]></commentInRDBMS>
+<generatorID>8B12F5AF-2D08-67AA-0BF2-D5ED77D60CBD</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="service_type" id="50FC2A37-0B94-BDCA-FDD3-8BA43A35EBF3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type of vehical/service for which the tire was designed for.
+]]></commentInRDBMS>
+<generatorID>46E241D6-149D-CB51-7F4B-B6DA2DD5D787</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="full_size" id="71892E69-F6CA-68A8-9F33-CEAC8E80BB47">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Complete tire size as described by the manufacturer.
+]]></commentInRDBMS>
+<generatorID>430E550F-F8E4-CB46-744C-0A78BCB20CB3</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="load_speed" id="A8D2F019-F9E9-DF07-7FBC-81B39D436C76">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Combination of the complete load index and speed rating.
+]]></commentInRDBMS>
+<generatorID>5688ED2E-0812-D9FA-69B9-46076458C346</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="core" id="329154B1-8821-35CE-D3A2-AEC339A5468C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Core item of all TLCs.
+]]></commentInRDBMS>
+<generatorID>5FE2DD8E-2C21-9A4C-73FD-02619683C697</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="net_special" id="7F89A573-449B-CD02-164F-549F8C3558A5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flag to identify if tire is on a pricing special from supplier (currently unused).
+]]></commentInRDBMS>
+<generatorID>538AAD7A-7370-4675-A67D-2DC59AE84318</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="net_special_price" id="ECF2A6D6-CC18-FAC3-8996-10DB045B73E3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reduced cost of the tire if tire on net special (currently unused).
+]]></commentInRDBMS>
+<generatorID>B90DF781-CCC8-9F1E-F03B-6DE24FB654DF</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>E200D531-8792-0FE7-B4AF-6389845382F0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pending_dd" id="AA84BBFD-358F-E016-506F-AC37B80D210E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[pending discontinuation flag (currently unused).
+]]></commentInRDBMS>
+<generatorID>EE45C718-2600-4DAA-7D41-11D83A7CCFDD</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tier" id="256E07A3-C443-307D-82A9-A36496F5DD97">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numerical value of the tier (currently unused; use class1_id instead).
+]]></commentInRDBMS>
+<generatorID>647909DE-F0D9-0D27-A0FD-5C29DD4D02EB</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="overall_diameter" id="13D92D22-20C3-3F41-DB48-94B8CEC65A6A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Outer diameter of the tire measured in the center of the tread.
+]]></commentInRDBMS>
+<generatorID>F1C250F1-1A50-325B-B891-E4C48A01BE63</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tread" id="4889233F-1027-7D23-C869-9C117D943BB6">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Verticle measurement between the top of the tire's tread rubber and bottom of the tire's deepest groove in 1/32 inch.
+]]></commentInRDBMS>
+<generatorID>6AA7CDF2-8B9E-872F-8FE9-5052DFFC239F</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacity_psi" id="0AA75A95-1A2C-092D-58D8-886B53498B0C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Represents maximum capacity of the tire that can be inflated to under cold pressure. Stamped on the sidewall of the tire.
+]]></commentInRDBMS>
+<generatorID>61903E38-16EE-B47E-C679-5ACCC27CFCB1</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dual_load_index" id="11077275-A1DF-290C-4383-33F28CB39ABF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numerical value used to determine relative load carrying capabilities in dual application.
+]]></commentInRDBMS>
+<generatorID>483FFF49-169C-BBC8-7DED-9BFC8C7E7DB1</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dd" id="383C7418-FBB8-24FE-5EA5-3C5878F67C84">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flag to identify discontinued item (at item level).
+]]></commentInRDBMS>
+<generatorID>F34200C0-F63E-FED1-7329-0FA1D813A065</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tread_pattern" id="E056DA0E-B57E-CFC7-0C0C-EF335B92D35D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tread pattern (currently unused).
+]]></commentInRDBMS>
+<generatorID>3BF5FE2E-4727-0EA4-D77A-345E7312975A</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="studdable" id="73AD02C8-55BA-972C-3A80-E542465B2A60">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Represents if the tire can accept studs.
+]]></commentInRDBMS>
+<generatorID>9C4C6A40-C201-11C5-B158-4A2CAE756EFB</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="foam" id="1BE94D96-5217-E8CD-06DD-71BA5521E04A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Goodyear sound detonating technology.
+]]></commentInRDBMS>
+<generatorID>82E5D4AF-3D8B-C8A1-A2F7-F7B484CA1299</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="application" id="8AC5F2CC-DE60-1694-D1C2-320879A6BC81">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifies whether a tire is consumer, commercial or industrial.
+]]></commentInRDBMS>
+<generatorID>3739B67B-9115-226C-4C65-2AF6BF767C00</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sales_tier" id="0F84F5F7-FA6A-916E-0375-A5F5B6EC6158">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Same as class1_id also knowns as brand_group_id  (currently unused).
+]]></commentInRDBMS>
+<generatorID>D9E649A0-5DF9-86D5-650E-48EE7BBE8AB0</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="extended_desc" id="6FE4DB3F-2F0F-7DB4-38E1-4543662CD9C5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Extended/full description of the item’s pattern
+]]></commentInRDBMS>
+<generatorID>B522F219-8259-0C8F-808D-7256B6209B78</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="default_product_group" id="9712F75B-BE6B-A7C4-73A0-3E23634F0642">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Indicates if an item is Tire or non-tire
+]]></commentInRDBMS>
+<generatorID>A54B4CA1-DF89-67DD-B767-861B78B1D156</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="msf" id="7BE7B447-1CF3-BECE-3888-601379500D3F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[mountain snowflake applicable or not
+]]></commentInRDBMS>
+<generatorID>771787A8-E9AC-7A13-4ED9-43C294F281CD</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="season_type" id="50B6443E-F9E5-8BFB-B2C9-E26D15DCC502">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Season type associated with the tire
+]]></commentInRDBMS>
+<generatorID>36A0B385-0BD0-0FEB-7A13-FF3581EEF96E</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_th_product_char" id="CF28E9B5-DB83-C5C4-5651-9EBA0CCF45B5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<generatorID>96559468-1DB0-0AF1-5C89-FEEE3909B457</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="506D692A-270C-3FB7-35FF-CBCCE6BC1D3C" name="dim_product_PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<generatorID>50CFC1AB-706B-E0B0-0509-1A6FFC15A747</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3104F473-7891-10BF-7A4A-9F8513892771"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D680554-C7AC-7391-8295-21F268A58A90" name="dim_product_item_id_is_th_product_char_UN">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-02 12:18:51 UTC</createdTime>
+<generatorID>4054ED30-3DB1-0485-0859-FB0F72D57628</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3445A57-9B48-5DFA-77E6-E08BE7F6A5B1"/>
+<colUsage columnID="CF28E9B5-DB83-C5C4-5651-9EBA0CCF45B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

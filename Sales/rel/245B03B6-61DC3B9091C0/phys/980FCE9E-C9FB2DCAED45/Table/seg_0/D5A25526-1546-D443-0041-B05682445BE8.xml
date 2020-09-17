@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="dim_channel_invoice" directorySegmentName="seg_0" id="D5A25526-1546-D443-0041-B05682445BE8">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:18:09 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<schemaObject>8669DC12-6F49-295B-3C55-3CC4EFB41BC3</schemaObject>
+<database>DB_NULLELEMENT</database>
+<schema>7B442683-4823-C921-8030-BAE96EE5E733</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="channel" id="13EE7D2A-A9FF-7101-C59E-29DC6EBE4F51">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:18:09 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="ship_to_key" id="26B1543E-5194-0349-4309-F82409879F16">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 15:01:28 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Invoice_date" id="79FC0D7D-691A-20F1-3558-DE7DDC4FF898">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 15:01:28 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="segment" id="9B4F02C5-ED9D-9A0E-7FC1-588990B83717">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:18:09 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="invoice_no" id="BC5918DF-4190-7DFD-933B-FC60BFDEDE90">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:18:09 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.IndexProxySqlServerv2k12" name="dim_channel_invoice__IDX" id="190E2108-2239-399F-F33D-8D81C6E7B010">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:18:09 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<recomputeStatistics>ON</recomputeStatistics>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="dim_channel_invoice_dim_ship_to_FK" id="782B2487-CB54-C47E-1812-6F37AA8978F8">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 15:01:28 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="dim_channel_invoice_PK" id="66AE7DAE-FF54-993D-948D-0E3DD8C3559F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 14:49:41 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="fact_inventory_receipts" directorySegmentName="seg_0" id="C12E90E8-6F98-98F2-7B08-80E4541FDF8C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<schemaObject>8669DC12-6F49-295B-3C55-3CC4EFB41BC3</schemaObject>
+<database>DB_NULLELEMENT</database>
+<schema>7B442683-4823-C921-8030-BAE96EE5E733</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="product_key" id="11732861-356C-306B-0430-D289DBF56DA3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="receipt_number" id="15D21C2D-0C1B-E40F-83FB-984FE9FB24E4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vouch_complete_line" id="17058B21-FEEE-B31B-8C4E-DED96C07D83A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="inv_receipts_clearing_acct" id="21FA1DC1-0B21-A67E-D1D7-4B6CF4F65FC4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="delete_flag" id="2A6CAB9A-DDCB-7EE4-D3AF-93F34AF26A91">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vouch_complete_hdr" id="3A0E3D57-DECF-9612-6DD6-3983C63BF4E7">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="inventory_receipts_line_id" id="48D59836-CC49-8FD7-FACF-9EF2CF86B3A1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="po_asn_line_id" id="545D97F0-6C67-B86F-211A-AD331CF0BC13">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="po_no" id="5B222350-09FC-464C-DA64-C275B5EA3ACB">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="po_asn_hdr_id" id="7951955C-748B-B2A7-B488-E7EC85CA1808">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="unit_cost" id="8C0D7B68-4197-E17A-D731-105BF85F805F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="line_no" id="96D1CB50-CAC5-5B28-CDAB-56A7338D5D1D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="extended_cost" id="971EDA8C-3578-3943-1E36-2AF9E5FEAEAC">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="location_key" id="A9AB3020-2CA3-6B6D-99C2-B8616854C3C3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="receipt_line_number" id="B060B058-DD79-0662-1293-91BEA3D832F4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="qty_received" id="B43DAED1-F9BF-192D-445D-CBAC3F05F859">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="receipt_type" id="B990AA3B-F192-0583-701E-06E8E4A74095">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="created_date_key" id="C4DBF431-7770-4CD5-49D9-A4DDB5493A5A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_inventory_receipts_dim_date_FK" id="34CB3533-EF50-9A77-5F3C-62F65234E11A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_inventory_receipts_dim_location_FK" id="5F2539AA-A671-A2CB-6FAB-83F9241F5610">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_inventory_receipts_dim_product_FK" id="75FBC798-650F-2BF5-EE60-033C108FBF82">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_inventory_receipts_fact_po_asn_FK" id="93FF72D9-E73A-B7BF-ACD4-EDE210C6876F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_inventory_receipts_fact_po_FK" id="DF0E63FC-A007-0680-ADB2-AF3DAF72DCE4">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="fact_inventory_receipts_PK" id="98F916FA-85D8-3077-913D-8890244326E9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 10:52:06 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

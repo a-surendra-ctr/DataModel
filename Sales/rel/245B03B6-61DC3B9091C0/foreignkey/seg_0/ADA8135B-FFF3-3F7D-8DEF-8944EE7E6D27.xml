@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ADA8135B-FFF3-3F7D-8DEF-8944EE7E6D27" containerWithKeyObject="D0659B66-4C99-12F5-3D75-B0FA5126F8F9" localFKIndex="A55BAE51-7AA5-2678-D1E5-81AD4B287F5B" name="fact_market_share_dim_dma_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 12:07:40 UTC</createdTime>
+<generatorID>DB4C22B7-60D0-CED1-67EC-06C9C61F19D9</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<referredTableLongName>edw.dim_dma</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F11F8C94-DC4F-2452-D448-E8B245D25A1B</referredTableID>
+<keyObject>33CEF064-EA8F-038B-FAAA-613AF812E1E4</keyObject>
+<referredKeyID>33CEF064-EA8F-038B-FAAA-613AF812E1E4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>dma_key</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

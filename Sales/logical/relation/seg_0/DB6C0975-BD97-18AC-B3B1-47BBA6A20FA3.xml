@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fact_audit_trail_dim_product_fk" directorySegmentName="seg_0" id="DB6C0975-BD97-18AC-B3B1-47BBA6A20FA3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:59:32 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<sourcePk>50CFC1AB-706B-E0B0-0509-1A6FFC15A747</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1BD7DC16-F2F7-8E6C-41D8-0DE2A8916D17</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0CF4CB44-057A-40DA-7A30-77D8225EA05D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

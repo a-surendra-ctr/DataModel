@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fact_market_share_dim_customer_group_fk" directorySegmentName="seg_0" id="31FDD6C0-8A2E-4750-01FC-B8C619B5FDC3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:10:05 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<sourcePk>78EA68AF-49B5-183A-844C-860F4B430E95</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9DD02BDD-2B9B-94CC-958F-0915444EB533</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0C046950-6DB6-07DC-0FFD-7EDDCCF4F615</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

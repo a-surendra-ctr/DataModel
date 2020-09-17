@@ -1,0 +1,370 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="DA3F96A3-067F-BED1-B038-670AB515A3A9" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="vw_dim_location">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<ordsAlias>v_dim_location</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT edw.dim_location.location_key AS [Location Key],
+  edw.dim_location.location_id AS [Location id],
+  edw.dim_location.name AS Location,
+  edw.dim_location.default_branch_id AS [Primary TLC],
+  edw.dim_location.delete_flag AS [Delete Flag],
+  edw.dim_location.capacity AS Capacity,
+  edw.dim_location.sqft AS [SQ FT],
+  edw.dim_location.region AS Region,
+  edw.dim_location.parent_dc AS [Parent DC],
+  edw.dim_location.goodyear_dc AS [Goodyear DC],
+  edw.dim_location.bridgestone_dc AS [Bridgestone DC],
+  edw.dim_location.latitude AS Latitude,
+  edw.dim_location.longitude AS Longitude,
+  edw.dim_location.timezone AS Timezone,
+  edw.dim_location.address1 AS Address,
+  edw.dim_location.address2 AS Address2,
+  edw.dim_location.city AS City,
+  edw.dim_location.state AS State,
+  edw.dim_location.postal_code AS [Postal Code],
+  edw.dim_location.country AS Country,
+  edw.dim_location.central_phone_number AS [Phone Number],
+  edw.dim_location.county AS County,
+  edw.dim_location.abl_district AS [ABL District],
+  edw.dim_location.super_region AS [Super Region],
+  edw.dim_location.cluster_name AS [Cluster Name]
+FROM edw.dim_location]]></userDefinedSQL>
+<parsed>true</parsed>
+<syntaxProvider>MSSQL</syntaxProvider>
+<originalTableID>B92F718C-426B-13F6-DAF2-7C3BCD0F6410</originalTableID>
+<includeSchemaNameInQuery>true</includeSchemaNameInQuery>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Location Key]" id="B60D1135-4A12-3D5F-8CDB-A37A2D3B89FA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[location key ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Location Key]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_location.location_key</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Location id]" id="49379E1F-4BE9-41F8-5C8B-4BD54197D09A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[What is the unique location identifier for this row
+
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Location id]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_location.location_id</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Location" id="D635EB6C-ED6A-14B8-A5C1-85D511B8265E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Name that identifies the address
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Location</alias>
+<dataType>VARCHAR (25)</dataType>
+<expression>edw.dim_location.name</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Primary TLC]" id="E26474B4-E4AD-0D2F-B523-FB1F0992A761">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Default branch of the company for the location
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Primary TLC]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_location.default_branch_id</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Delete Flag]" id="5BD806B8-2D58-7446-BA64-A713D1EE1857">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicates whether this record is logically deleted
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Delete Flag]</alias>
+<dataType>BIT</dataType>
+<expression>edw.dim_location.delete_flag</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Capacity" id="361EC6C6-C96A-1874-2826-A79FCEADE3C1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Capacity</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_location.capacity</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[SQ FT]" id="B121752C-E43A-45A6-FAFD-D0843F3A57DF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[SQ FT]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_location.sqft</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Region" id="E23666A0-0052-613F-4CD9-868450ED7B18">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ties the location to an entry in the region table
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Region</alias>
+<dataType>VARCHAR (20)</dataType>
+<expression>edw.dim_location.region</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Parent DC]" id="0EA8B9D0-4F61-8C35-9E68-DD225DE4B7E6">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Parent DC
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Parent DC]</alias>
+<dataType>CHAR (1)</dataType>
+<expression>edw.dim_location.parent_dc</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Goodyear DC]" id="5E0A1E7E-B16A-EA82-B799-680E97C70F7F">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[GoodYear DC
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Goodyear DC]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_location.goodyear_dc</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Bridgestone DC]" id="F23BD628-28A1-DF33-50D7-D288EB846187">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[BridegeStone DC
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Bridgestone DC]</alias>
+<dataType>INTEGER</dataType>
+<expression>edw.dim_location.bridgestone_dc</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Latitude" id="41C3D2E0-09C6-C8FA-1579-8E571DE28B56">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[TLC geo location value - latitude
+
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Latitude</alias>
+<dataType>VARCHAR (15)</dataType>
+<expression>edw.dim_location.latitude</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Longitude" id="82D58C18-55E3-29E7-3ADD-73FF5733A6CA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[TLC geo location value - longitude
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Longitude</alias>
+<dataType>VARCHAR (15)</dataType>
+<expression>edw.dim_location.longitude</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Timezone" id="94665E1C-EFFF-A7E6-4B69-DA78B5017908">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[TLC timezone (example: Eastern, Central, Pacific, Mountain, Hawaii).
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Timezone</alias>
+<dataType>VARCHAR (10)</dataType>
+<expression>edw.dim_location.timezone</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Address" id="DA36D303-BE62-62C2-00A0-301B7C4C5CB0">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[TLC address 1]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Address</alias>
+<dataType>VARCHAR (50)</dataType>
+<expression>edw.dim_location.address1</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Address2" id="B5FCEEBE-1155-1733-1DAD-B67AC4869DF0">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[TLC address 2
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Address2</alias>
+<dataType>VARCHAR (50)</dataType>
+<expression>edw.dim_location.address2</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="City" id="FB6111C7-C1C2-4D94-B081-F484ED064F1B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[TLC city
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>City</alias>
+<dataType>VARCHAR (25)</dataType>
+<expression>edw.dim_location.city</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="State" id="AC93706D-5085-AE3A-5B3E-9154F0FD79CB">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[TLC state.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>State</alias>
+<dataType>VARCHAR (25)</dataType>
+<expression>edw.dim_location.state</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Postal Code]" id="50689C41-1B94-2D45-67E5-FE94FEE15246">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[TLC postal code
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Postal Code]</alias>
+<dataType>VARCHAR (10)</dataType>
+<expression>edw.dim_location.postal_code</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Country" id="BC3E2CEB-9FA3-2614-5B1C-DB3C430C12DC">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[TLC country
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Country</alias>
+<dataType>VARCHAR (10)</dataType>
+<expression>edw.dim_location.country</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Phone Number]" id="DC7F561D-F54C-7070-6A21-1EC6FC1ECE2A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[TLC phone number.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Phone Number]</alias>
+<dataType>VARCHAR (20)</dataType>
+<expression>edw.dim_location.central_phone_number</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="County" id="D7FD2A39-78B3-A9F4-D8B4-22292785AB71">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[TLC county.
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>County</alias>
+<dataType>VARCHAR (30)</dataType>
+<expression>edw.dim_location.county</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[ABL District]" id="887836CE-4A44-8FBE-247A-5F20FEC5E63C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[ABL District]</alias>
+<dataType>VARCHAR (20)</dataType>
+<expression>edw.dim_location.abl_district</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Super Region]" id="CC7F1AED-6101-B521-0524-5A80F2CF6BBF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Superset for the Region 
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Super Region]</alias>
+<dataType>VARCHAR (25)</dataType>
+<expression>edw.dim_location.super_region</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="[Cluster Name]" id="C9A69D5E-05C8-5D28-BCFA-D627AF481BA6">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:09:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[The name of the cluster where the location belongs to 
+]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>[Cluster Name]</alias>
+<dataType>VARCHAR (10)</dataType>
+<expression>edw.dim_location.cluster_name</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="6C14F747-4451-DBF3-C592-C16F106ACF94" name="vw_dim_location_PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:43:19 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="B60D1135-4A12-3D5F-8CDB-A37A2D3B89FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</TableView>

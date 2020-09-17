@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D90D8ADF-8023-4102-8D5E-72F11C43D49B" name="dim_channel_invoice">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 15:57:33 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="invoice no" id="B1EEA9C5-2269-67B4-7592-D6013ECF4A79">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:03:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[The invoice no ]]></commentInRDBMS>
+<generatorID>AA5A00B3-F4E1-3BB6-17FF-30B6F96585B0</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>91A0A245-CA0B-68C0-7AC3-642E3C723B59</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship to key" id="3FEE6526-6AEB-572C-639A-8FB46F28749E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 14:54:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Ship To Key ]]></commentInRDBMS>
+<generatorID>15CC4A22-EAA3-C484-FF9E-A0C2BC1C7890</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>D2B848A2-2C2E-1853-E591-1F0FBCA2A145</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Invoice_date" id="7F8849E7-56BD-75BC-075D-9A5415DFB997">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-25 12:31:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Iinvoice date ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="channel" id="A125A3D7-97E5-BC44-CB98-E50ECCF2A30A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:01:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Channel]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="segment" id="6BD18369-235F-8D07-E239-65B3244E4B6D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-04 16:02:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Segment]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="keyaccount" id="171255AA-C13F-B384-6480-0E20378F5135">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 18:18:39 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FED80015-333D-FB6D-BECA-E7E8081D7F31" name="dim_channel_invoice PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-11 07:27:44 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B1EEA9C5-2269-67B4-7592-D6013ECF4A79</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

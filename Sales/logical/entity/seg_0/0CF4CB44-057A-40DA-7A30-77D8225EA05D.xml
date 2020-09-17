@@ -1,0 +1,212 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0CF4CB44-057A-40DA-7A30-77D8225EA05D" name="fact_audit_trail">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:29:07 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="audit_trail_id" id="4F5E422E-7D59-9065-C88D-9642F5258D2A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:32:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique source identifier for this row]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>70DEEBA3-B8A7-4A52-B977-7E7A8B4FF4BA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="product key" id="3C8F6247-4331-1CB0-C738-2CD04E1321A3">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:59:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Product Key ]]></commentInRDBMS>
+<generatorID>DB6C0975-BD97-18AC-B3B1-47BBA6A20FA3</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>C90418DE-A903-21DD-29DE-D58BC95A9186</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date key" id="A8FA423D-DF01-3EA0-DE4A-CF963B95CB73">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:01:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Date Key ]]></commentInRDBMS>
+<generatorID>D60EB502-688D-0C6D-7631-8C2DDF578844</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>7AD34AEB-4BD6-9557-E4A7-42BDD03D36E9</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_key" id="F0E4124F-EB2E-587B-EC95-9DC4CEA5ADE8">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:02:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[The User Key]]></commentInRDBMS>
+<generatorID>841285A3-F93A-2ACA-7465-DB92A805B7A0</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>E4F00CEB-862B-7AF3-C42C-CA495E5BD2A3</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="column_name" id="F20A2667-F05C-9B82-4DA1-D2D29031A890">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:37:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[The column value for which the changes has been affected ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="key_cd" id="FF58CB8D-8BF6-2F88-7F21-69B28FDC70A8">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:41:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[The Key cd for the changed entity]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="key_value" id="52FDC824-C688-1341-BF7B-06E307520FC5">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:42:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[The value for the Key cd  ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="line_no" id="23C2D30D-C816-0897-E1FF-B8FC40A2FEE2">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:43:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[The line number for the give source ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old_value" id="B3FB5998-4106-8DAE-2893-B83F7D925BFE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:44:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[The old value ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new_value" id="E6D9BE88-BA28-E857-CE2B-37A0E763CF3C">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:46:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[The new changed value]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="table_name" id="5DE8B210-5A57-00CA-0FB7-0BDF15BC31F8">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:53:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[The table name]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="column_description" id="A77D5281-EDDC-570D-6E81-99CA8B549435">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:54:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Short column description for the changed column ]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="064351B6-1D68-FFEC-97C2-1008E63794B5" name="fact_audit_trail PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 09:35:35 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>4F5E422E-7D59-9065-C88D-9642F5258D2A</newElementsIDs>
+<usedAttributes>
+<attributeRef>4F5E422E-7D59-9065-C88D-9642F5258D2A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

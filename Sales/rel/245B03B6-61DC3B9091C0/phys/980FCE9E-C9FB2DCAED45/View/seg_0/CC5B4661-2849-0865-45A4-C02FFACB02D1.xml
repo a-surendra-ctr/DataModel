@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableViewProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableViewProxySqlServerv2k5" name="vw_dim_date" directorySegmentName="seg_0" id="CC5B4661-2849-0865-45A4-C02FFACB02D1">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-07-27 14:50:56 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<schemaObject>8669DC12-6F49-295B-3C55-3CC4EFB41BC3</schemaObject>
+<dataBase>DB_NULLELEMENT</dataBase>
+<schema>7B442683-4823-C921-8030-BAE96EE5E733</schema>
+</TableViewProxySqlServerv2k5>

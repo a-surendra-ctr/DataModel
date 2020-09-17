@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C9CB6E7-25E2-EDAC-E377-31D5DF9F3FE4" schemaObject="8669DC12-6F49-295B-3C55-3CC4EFB41BC3" name="dim_user">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:04:03 UTC</createdTime>
+<generatorID>79F3A24F-AEC1-2A1E-1BC3-F0CD6DA8F494</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_key" id="E5843902-96CA-6C9F-7846-2EC86A45CC7B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:04:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[The user key for the user]]></commentInRDBMS>
+<generatorID>E4F00CEB-862B-7AF3-C42C-CA495E5BD2A3</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="49B5E0C8-BA98-2A2C-06E1-D9F8A50F13FA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:04:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique user identifier]]></commentInRDBMS>
+<generatorID>E3625196-4CDC-7C79-5BF6-CC92970BD111</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="810FED4E-DEB4-7887-EA93-50494F0AA18D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:04:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[User name]]></commentInRDBMS>
+<generatorID>2A10C930-F230-6296-129F-515445C7DC86</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="active" id="31D5048A-2CC3-D6AA-C0E7-67D4A5C7EC3A">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:04:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flag indicating if user is active]]></commentInRDBMS>
+<generatorID>9735FCD8-BCAC-CE6E-02D8-41CAD9B5C7E5</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="delete_flag" id="9F9AEC05-C0FD-C304-FE50-EE29BA77EACE">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:04:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Record flagged as delete (exclude from reports)]]></commentInRDBMS>
+<generatorID>4A20A2B1-1553-B6D2-C296-E744779EA549</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>801B967D-B91D-25B5-35D6-277596355971</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email_address" id="DAE38431-77E3-AA7B-4212-BCD7D8D89D81">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:04:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Uuser email address]]></commentInRDBMS>
+<generatorID>C3DDE7F5-1399-49B4-3728-F9CA37CDE9E2</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role" id="9F0CDDFF-F922-5582-8BF4-5E8EEC9021BF">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:04:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[User role]]></commentInRDBMS>
+<generatorID>A30D1B01-5E46-8ADB-699F-B41749FF5A6E</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8711F948-EBD1-4F3B-E12B-091C6FF03B43" name="dim_user_PK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:04:03 UTC</createdTime>
+<generatorID>61E5BA3E-07EE-9ADD-A7D9-133DB3D6A19B</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5843902-96CA-6C9F-7846-2EC86A45CC7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE86947C-36A8-2CD3-A9BB-DF459235DC68" name="dim_user_user_id_UN">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-08-26 10:14:25 UTC</createdTime>
+<generatorID>0623F4F5-FE30-F3F6-E17A-ACD0921A8452</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49B5E0C8-BA98-2A2C-06E1-D9F8A50F13FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

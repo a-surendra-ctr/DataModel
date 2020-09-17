@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0C046950-6DB6-07DC-0FFD-7EDDCCF4F615" name="fact_market_share">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 11:56:45 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="activity_date key" id="F5198BEB-F4B2-47C8-E4D0-FBADFA46B39D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:24:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[The activity date key ]]></commentInRDBMS>
+<generatorID>58FEABA5-D4D8-2234-8D9E-B2717DD7868B</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>7AD34AEB-4BD6-9557-E4A7-42BDD03D36E9</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customer_group_key" id="4A45E937-5DCF-2026-8A6C-403ED26D7E46">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 10:11:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[The customer group this related to]]></commentInRDBMS>
+<generatorID>31FDD6C0-8A2E-4750-01FC-B8C619B5FDC3</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>7A85DB1A-5ED3-D120-E0B0-DE7B2F39A1B2</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dma_key" id="948597FF-7F7B-D56D-8D39-C842AA3EEE6D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-15 12:02:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[The DMA Key]]></commentInRDBMS>
+<generatorID>DB4C22B7-60D0-CED1-67EC-06C9C61F19D9</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<referedAttribute>757739AF-2802-B51F-F4A3-5F4A38C554F8</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tirehub_units" id="406D14BA-2304-008A-8409-04D54617E79D">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 12:21:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tire Hub Units]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="secondary_units" id="5353720A-2D9E-FFC0-DF3E-29AE993A5908">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 12:21:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Secondary Units]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direct_units" id="BED4A351-8511-31FD-B2FE-1964C4031954">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-09 12:22:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Direct Units]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0A2B6071-DDC2-5F24-A757-BECC57C36046" containerWithKeyObject="C12E90E8-6F98-98F2-7B08-80E4541FDF8C" localFKIndex="93FF72D9-E73A-B7BF-ACD4-EDE210C6876F" name="fact_inventory_receipts_fact_po_asn_FK">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-04 13:57:06 UTC</createdTime>
+<generatorID>F9C7184C-129B-8E21-09D9-44221FC9C0A5</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<referredTableLongName>fact_po_asn</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E86CE29F-48EE-7A76-FDB4-12212C74F3DD</referredTableID>
+<keyObject>9C3D5114-62EC-7538-B133-459AA7C3535A</keyObject>
+<referredKeyID>9C3D5114-62EC-7538-B133-459AA7C3535A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>po_asn_hdr_id,po_asn_line_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
