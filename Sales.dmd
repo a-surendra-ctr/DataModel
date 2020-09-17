@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Sales" id="8CAB1E2E-1D80-C123-FE17-5FE05C71372A" version="3.5">
+<createdBy>EI01408</createdBy>
+<createdTime>2020-07-01 12:17:03 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8CAB1E2E-1D80-C123-FE17-5FE05C71372A</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="F6566D6E-9C1D-6DE2-A2FE-4D89D27E39A7">
+<designStoragePath>C:\[tlc].[DIM_JUNK_FACT_SALES_ATTRIBUTES]</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="09A56353-7478-1AC3-4D6B-D60F42F7C519">
+<designStoragePath>C:\[tlc].[DIM_SHIP_TO]</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="286EC8BB-058A-DC67-7296-C8D4C4844AAB">
+<designStoragePath>C:\[tlc].[DIM_SHIP_TO]</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="E375AD24-1BC3-95CD-3530-C3A6FCAB14D0">
+<designStoragePath>C:\[tlc].[DIM_SHIP_TO]</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="8AAB2F20-FDF0-B53C-19B7-1E66D7FEAF7D">
+<designStoragePath>C:\[dbo].[dim_product_loc]</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="E1AC68C4-7091-828F-BB3B-575B63CE73E7">
+<designStoragePath>C:\[dbo].[dim_product_loc]</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="9C6C565F-8A47-FDB2-9B7F-D4C86C20A83D">
+<designStoragePath>C:\fact_invoice_transfer</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="94304DCB-0D3D-D21A-BF03-D87F4D070ECD">
+<designStoragePath>C:\edw.vw_dim_product</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="8426167F-1C80-48C3-2C09-07C269E7D0B3">
+<designStoragePath>C:\ARJUN\TIREHUB\DATA MODELING\DATA MODEL\CONCEPTUAL\cdm</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>
