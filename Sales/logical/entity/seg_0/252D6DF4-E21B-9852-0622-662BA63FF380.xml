@@ -73,6 +73,19 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="load_date" id="89D5D9F4-1695-95A7-5A9C-5010E8280194">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-18 12:10:33 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="100638B5-2D5A-E9D1-6682-86A5929D38E7" name="dim_dma PK">
