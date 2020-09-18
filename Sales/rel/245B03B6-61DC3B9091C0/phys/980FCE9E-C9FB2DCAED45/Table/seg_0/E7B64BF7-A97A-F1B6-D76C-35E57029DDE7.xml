@@ -17,6 +17,11 @@
 <createdTime>2020-09-15 10:12:50 UTC</createdTime>
 <ownerDesignName>Sales</ownerDesignName>
 </ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="load_date" id="6723CE8B-195F-C1A9-D299-E41F88476FFA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-18 16:51:12 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
 <ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="customer_group_name" id="AC267171-ED57-6F32-FA6A-5E7A3F5E8EB2">
 <createdBy>EI11736</createdBy>
 <createdTime>2020-09-15 10:12:50 UTC</createdTime>
@@ -30,6 +35,11 @@
 <ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="customer_group_short_name" id="DF52E9E4-E22F-CD73-3831-40DF614BCF3D">
 <createdBy>EI11736</createdBy>
 <createdTime>2020-09-15 10:12:50 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="orig_customer_group_name" id="FB1B5F8E-7C3B-5E6C-B00A-7F31709B99B9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-18 16:51:12 UTC</createdTime>
 <ownerDesignName>Sales</ownerDesignName>
 </ColumnProxy>
 </columnProxies>

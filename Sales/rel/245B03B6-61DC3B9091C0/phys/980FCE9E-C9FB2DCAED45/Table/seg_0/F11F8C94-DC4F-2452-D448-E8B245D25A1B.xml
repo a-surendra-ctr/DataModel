@@ -7,9 +7,14 @@
 <database>DB_NULLELEMENT</database>
 <schema>7B442683-4823-C921-8030-BAE96EE5E733</schema>
 <columnProxies>
-<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="zip_name" id="534724A8-5422-B21E-2BD4-F9A5E44BDB72">
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="postal_code_name" id="534724A8-5422-B21E-2BD4-F9A5E44BDB72">
 <createdBy>EI11736</createdBy>
 <createdTime>2020-09-15 12:07:40 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="load_date" id="6D0DA9E6-BB26-3131-2A90-B092FCE1EB99">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-18 16:51:12 UTC</createdTime>
 <ownerDesignName>Sales</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dma_key" id="7F8D72D2-6A09-15C4-1E77-F1BDD0F1B270">
@@ -22,7 +27,7 @@
 <createdTime>2020-09-15 12:07:40 UTC</createdTime>
 <ownerDesignName>Sales</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="zip_code" id="CBFA3D3C-FFE6-F1AB-8E22-377040809117">
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="postal_code" id="CBFA3D3C-FFE6-F1AB-8E22-377040809117">
 <createdBy>EI11736</createdBy>
 <createdTime>2020-09-15 12:07:40 UTC</createdTime>
 <ownerDesignName>Sales</ownerDesignName>

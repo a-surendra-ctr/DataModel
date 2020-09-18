@@ -95,6 +95,19 @@
 <colAssociation fkAssociation="ADA8135B-FFF3-3F7D-8DEF-8944EE7E6D27" referredColumn="7F8D72D2-6A09-15C4-1E77-F1BDD0F1B270"/>
 </associations>
 </Column>
+<Column name="load_date" id="EAFE034A-986A-44EF-3ABE-9D308223187E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-18 16:51:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Current Load Date for the record whenever Insert / Update happens]]></commentInRDBMS>
+<generatorID>A7EDC770-67A6-13EF-C4C7-E915A864BD8B</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="D36D3DE3-339D-ECA2-6961-B236801AF9C6" name="fact_market_share_dim_customer_group_FK">

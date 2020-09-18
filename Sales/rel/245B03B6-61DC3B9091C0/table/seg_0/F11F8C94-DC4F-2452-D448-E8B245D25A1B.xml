@@ -62,6 +62,19 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="load_date" id="6D0DA9E6-BB26-3131-2A90-B092FCE1EB99">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-18 16:51:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Current Load Date for the record whenever Insert / Update happens]]></commentInRDBMS>
+<generatorID>20497746-0A96-091A-263A-C9B3DA880648</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="33CEF064-EA8F-038B-FAAA-613AF812E1E4" name="dim_dma_PK">

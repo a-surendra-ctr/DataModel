@@ -28,6 +28,21 @@
 <domain>71F37F98-E6E3-8B61-B8B0-AA01B6C3704B</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="orig_customer_group_name" id="92F700FE-8D8A-748D-C278-E4EE7DCD1FE9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-18 16:43:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[The original / source customer group name]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="customer_group_name" id="1702BF58-589B-239D-1363-901C9D19EC56">
 <createdBy>EI11736</createdBy>
 <createdTime>2020-09-15 10:01:30 UTC</createdTime>
@@ -87,6 +102,20 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="load_date" id="E4D49368-B819-6F29-2441-580342507875">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-18 16:46:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Current Load Date for the record whenever Insert / Update happens]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

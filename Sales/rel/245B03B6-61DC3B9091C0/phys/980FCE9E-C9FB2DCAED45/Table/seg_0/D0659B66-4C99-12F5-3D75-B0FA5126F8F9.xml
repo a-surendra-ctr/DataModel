@@ -37,6 +37,11 @@
 <createdTime>2020-09-15 10:26:14 UTC</createdTime>
 <ownerDesignName>Sales</ownerDesignName>
 </ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="load_date" id="EAFE034A-986A-44EF-3ABE-9D308223187E">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-18 16:51:12 UTC</createdTime>
+<ownerDesignName>Sales</ownerDesignName>
+</ColumnProxy>
 </columnProxies>
 <foreignKeys>
 <ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="fact_market_share_dim_date_FK" id="9AEABEFC-8E05-F6A1-B6F0-98D2A210EAE1">

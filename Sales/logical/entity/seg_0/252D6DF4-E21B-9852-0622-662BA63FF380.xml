@@ -73,9 +73,10 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="load_date" id="89D5D9F4-1695-95A7-5A9C-5010E8280194">
+<Attribute name="load_date" id="20497746-0A96-091A-263A-C9B3DA880648">
 <createdBy>EI11736</createdBy>
-<createdTime>2020-09-18 12:10:33 UTC</createdTime>
+<createdTime>2020-09-18 16:45:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Current Load Date for the record whenever Insert / Update happens]]></commentInRDBMS>
 <ownerDesignName>Sales</ownerDesignName>
 <engineerTo>
 <item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>

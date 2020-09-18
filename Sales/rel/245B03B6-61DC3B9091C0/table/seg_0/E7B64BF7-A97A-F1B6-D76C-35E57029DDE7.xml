@@ -76,6 +76,33 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="orig_customer_group_name" id="FB1B5F8E-7C3B-5E6C-B00A-7F31709B99B9">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-18 16:51:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[The original / source customer group name]]></commentInRDBMS>
+<generatorID>92F700FE-8D8A-748D-C278-E4EE7DCD1FE9</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="load_date" id="6723CE8B-195F-C1A9-D299-E41F88476FFA">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-18 16:51:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Current Load Date for the record whenever Insert / Update happens]]></commentInRDBMS>
+<generatorID>E4D49368-B819-6F29-2441-580342507875</generatorID>
+<ownerDesignName>Sales</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="1C988481-430E-DFFE-E3B6-F1784E25167F" name="dim_customer_group_PK">

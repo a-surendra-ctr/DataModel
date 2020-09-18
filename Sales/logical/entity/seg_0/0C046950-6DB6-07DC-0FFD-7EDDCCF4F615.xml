@@ -102,5 +102,19 @@
 <domain>83B57BA5-C8A7-12E0-7ED4-FDF2603D2539</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="load_date" id="A7EDC770-67A6-13EF-C4C7-E915A864BD8B">
+<createdBy>EI11736</createdBy>
+<createdTime>2020-09-18 16:47:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Current Load Date for the record whenever Insert / Update happens]]></commentInRDBMS>
+<ownerDesignName>Sales</ownerDesignName>
+<engineerTo>
+<item key="245B03B6-46A4-0130-7967-61DC3B9091C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 </Entity>
